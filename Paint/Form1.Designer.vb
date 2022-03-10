@@ -185,7 +185,7 @@ Partial Class Form1
         Me.Controls.Add(Me.CustomColorButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Drawing App"
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
