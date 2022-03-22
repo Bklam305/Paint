@@ -9,7 +9,7 @@
     End Sub
     Private Sub pictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
         If m_Previous IsNot Nothing Then
-            Dim l As New MyRectangle(PictureBox1.Image, m_Previous, e.Location)
+            Dim l As New Circle(PictureBox1.Image, m_Previous, e.Location)
             l.w = TrackBar2.Value
             l.h = TrackBar1.Value
             l.Pen = New Pen(c, w)
@@ -66,6 +66,9 @@
         c = sender.backcolor
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles whiteButton.Click
+        c = sender.backcolor
+    End Sub
+    Private Sub grayButton_Click(sender As Object, e As EventArgs) Handles grayButton.Click
         c = sender.backcolor
     End Sub
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click

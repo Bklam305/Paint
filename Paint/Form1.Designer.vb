@@ -42,6 +42,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.grayButton = New System.Windows.Forms.Button()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +61,7 @@ Partial Class Form1
         'organgeButton
         '
         Me.organgeButton.BackColor = System.Drawing.Color.Orange
-        Me.organgeButton.Location = New System.Drawing.Point(715, 15)
+        Me.organgeButton.Location = New System.Drawing.Point(711, 12)
         Me.organgeButton.Name = "organgeButton"
         Me.organgeButton.Size = New System.Drawing.Size(26, 25)
         Me.organgeButton.TabIndex = 10
@@ -69,7 +70,7 @@ Partial Class Form1
         'redButton
         '
         Me.redButton.BackColor = System.Drawing.Color.Red
-        Me.redButton.Location = New System.Drawing.Point(683, 15)
+        Me.redButton.Location = New System.Drawing.Point(679, 12)
         Me.redButton.Name = "redButton"
         Me.redButton.Size = New System.Drawing.Size(26, 25)
         Me.redButton.TabIndex = 9
@@ -96,7 +97,7 @@ Partial Class Form1
         'greenButton
         '
         Me.greenButton.BackColor = System.Drawing.Color.Green
-        Me.greenButton.Location = New System.Drawing.Point(715, 46)
+        Me.greenButton.Location = New System.Drawing.Point(743, 12)
         Me.greenButton.Name = "greenButton"
         Me.greenButton.Size = New System.Drawing.Size(26, 25)
         Me.greenButton.TabIndex = 13
@@ -105,7 +106,7 @@ Partial Class Form1
         'yellowButton
         '
         Me.yellowButton.BackColor = System.Drawing.Color.Yellow
-        Me.yellowButton.Location = New System.Drawing.Point(683, 46)
+        Me.yellowButton.Location = New System.Drawing.Point(679, 43)
         Me.yellowButton.Name = "yellowButton"
         Me.yellowButton.Size = New System.Drawing.Size(26, 25)
         Me.yellowButton.TabIndex = 12
@@ -114,7 +115,7 @@ Partial Class Form1
         'whiteButton
         '
         Me.whiteButton.BackColor = System.Drawing.Color.White
-        Me.whiteButton.Location = New System.Drawing.Point(715, 108)
+        Me.whiteButton.Location = New System.Drawing.Point(743, 74)
         Me.whiteButton.Name = "whiteButton"
         Me.whiteButton.Size = New System.Drawing.Size(26, 25)
         Me.whiteButton.TabIndex = 17
@@ -123,7 +124,7 @@ Partial Class Form1
         'blackButton
         '
         Me.blackButton.BackColor = System.Drawing.Color.Black
-        Me.blackButton.Location = New System.Drawing.Point(683, 108)
+        Me.blackButton.Location = New System.Drawing.Point(679, 74)
         Me.blackButton.Name = "blackButton"
         Me.blackButton.Size = New System.Drawing.Size(26, 25)
         Me.blackButton.TabIndex = 16
@@ -132,7 +133,7 @@ Partial Class Form1
         'purpleButton
         '
         Me.purpleButton.BackColor = System.Drawing.Color.Purple
-        Me.purpleButton.Location = New System.Drawing.Point(715, 77)
+        Me.purpleButton.Location = New System.Drawing.Point(711, 43)
         Me.purpleButton.Name = "purpleButton"
         Me.purpleButton.Size = New System.Drawing.Size(26, 25)
         Me.purpleButton.TabIndex = 15
@@ -141,7 +142,7 @@ Partial Class Form1
         'blueButton
         '
         Me.blueButton.BackColor = System.Drawing.Color.DodgerBlue
-        Me.blueButton.Location = New System.Drawing.Point(683, 77)
+        Me.blueButton.Location = New System.Drawing.Point(743, 43)
         Me.blueButton.Name = "blueButton"
         Me.blueButton.Size = New System.Drawing.Size(26, 25)
         Me.blueButton.TabIndex = 14
@@ -207,11 +208,21 @@ Partial Class Form1
         Me.Label3.TabIndex = 102
         Me.Label3.Text = "Width"
         '
+        'grayButton
+        '
+        Me.grayButton.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.grayButton.Location = New System.Drawing.Point(711, 74)
+        Me.grayButton.Name = "grayButton"
+        Me.grayButton.Size = New System.Drawing.Size(26, 25)
+        Me.grayButton.TabIndex = 103
+        Me.grayButton.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.grayButton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TrackBar2)
         Me.Controls.Add(Me.Label2)
@@ -261,4 +272,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents Label3 As Label
+    Friend WithEvents grayButton As Button
 End Class
