@@ -43,6 +43,13 @@ Partial Class Form1
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.grayButton = New System.Windows.Forms.Button()
+        Me.cirButton = New System.Windows.Forms.Button()
+        Me.rectButton = New System.Windows.Forms.Button()
+        Me.arcButton = New System.Windows.Forms.Button()
+        Me.liButton = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.pieButton = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -181,6 +188,7 @@ Partial Class Form1
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar1.TabIndex = 100
+        Me.TrackBar1.TabStop = False
         '
         'Label2
         '
@@ -197,7 +205,8 @@ Partial Class Form1
         Me.TrackBar2.Maximum = 100
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
-        Me.TrackBar2.TabIndex = 101
+        Me.TrackBar2.TabIndex = 100
+        Me.TrackBar2.TabStop = False
         '
         'Label3
         '
@@ -217,11 +226,81 @@ Partial Class Form1
         Me.grayButton.TabIndex = 103
         Me.grayButton.UseVisualStyleBackColor = False
         '
+        'cirButton
+        '
+        Me.cirButton.Location = New System.Drawing.Point(797, 15)
+        Me.cirButton.Name = "cirButton"
+        Me.cirButton.Size = New System.Drawing.Size(50, 50)
+        Me.cirButton.TabIndex = 104
+        Me.cirButton.Text = "Circles"
+        Me.cirButton.UseVisualStyleBackColor = True
+        '
+        'rectButton
+        '
+        Me.rectButton.Location = New System.Drawing.Point(797, 74)
+        Me.rectButton.Name = "rectButton"
+        Me.rectButton.Size = New System.Drawing.Size(50, 50)
+        Me.rectButton.TabIndex = 105
+        Me.rectButton.Text = "Rectangles"
+        Me.rectButton.UseVisualStyleBackColor = True
+        '
+        'arcButton
+        '
+        Me.arcButton.Location = New System.Drawing.Point(797, 199)
+        Me.arcButton.Name = "arcButton"
+        Me.arcButton.Size = New System.Drawing.Size(50, 50)
+        Me.arcButton.TabIndex = 107
+        Me.arcButton.Text = "Arcs"
+        Me.arcButton.UseVisualStyleBackColor = True
+        '
+        'liButton
+        '
+        Me.liButton.Location = New System.Drawing.Point(797, 137)
+        Me.liButton.Name = "liButton"
+        Me.liButton.Size = New System.Drawing.Size(50, 50)
+        Me.liButton.TabIndex = 106
+        Me.liButton.Text = "Line"
+        Me.liButton.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(797, 327)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(50, 50)
+        Me.Button5.TabIndex = 109
+        Me.Button5.Text = "Button5"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'pieButton
+        '
+        Me.pieButton.Location = New System.Drawing.Point(797, 263)
+        Me.pieButton.Name = "pieButton"
+        Me.pieButton.Size = New System.Drawing.Size(50, 50)
+        Me.pieButton.TabIndex = 108
+        Me.pieButton.Text = "Pies"
+        Me.pieButton.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(797, 383)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(50, 50)
+        Me.Button8.TabIndex = 110
+        Me.Button8.Text = "Button8"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(861, 450)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.pieButton)
+        Me.Controls.Add(Me.arcButton)
+        Me.Controls.Add(Me.liButton)
+        Me.Controls.Add(Me.rectButton)
+        Me.Controls.Add(Me.cirButton)
         Me.Controls.Add(Me.grayButton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TrackBar2)
@@ -273,4 +352,11 @@ Partial Class Form1
     Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents Label3 As Label
     Friend WithEvents grayButton As Button
+    Friend WithEvents cirButton As Button
+    Friend WithEvents rectButton As Button
+    Friend WithEvents arcButton As Button
+    Friend WithEvents liButton As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents pieButton As Button
+    Friend WithEvents Button8 As Button
 End Class

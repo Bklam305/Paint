@@ -1,4 +1,4 @@
-﻿Public Class Circle
+﻿Public Class Pie
     Public Property Pen As Pen
     Dim m_image As Image
     Dim m_a As Point
@@ -13,7 +13,7 @@
     End Sub
     Public Sub Draw()
         Using g As Graphics = Graphics.FromImage(m_image)
-            g.DrawEllipse(Pen, m_a.X, m_a.Y, w, h)
+            g.DrawPie(Pen, m_a.X, m_a.Y, h, w, 0, 90)
         End Using
     End Sub
 End Class
