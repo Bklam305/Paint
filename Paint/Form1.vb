@@ -106,14 +106,14 @@
     Private Sub liButton_Click(sender As Object, e As EventArgs) Handles liButton.Click
         type = "Line"
     End Sub
-    Private Sub rectButton_Click(sender As Object, e As EventArgs) Handles rectButton.Click
-        type = "Rectangle"
-    End Sub
     Private Sub TrackBar2_Scroll(sender As Object, e As EventArgs) Handles TrackBar2.Scroll
         w = TrackBar2.Value
     End Sub
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         h = TrackBar1.Value
+    End Sub
+    Private Sub rectButton_Click(sender As Object, e As EventArgs) Handles rectButton.Click
+        type = "Rectangle"
     End Sub
     Private Sub cirButton_Click(sender As Object, e As EventArgs) Handles cirButton.Click
         type = "Circle"
@@ -124,5 +124,12 @@
 
     Private Sub pieButton_Click(sender As Object, e As EventArgs) Handles pieButton.Click
         type = "Pie"
+    End Sub
+    Private Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
+        Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
+        Using g As Graphics = Graphics.FromImage(bmp)
+            g.Clear(Color.White)
+        End Using
+        PictureBox1.Image = bmp
     End Sub
 End Class
