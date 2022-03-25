@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.organgeButton = New System.Windows.Forms.Button()
@@ -50,19 +50,16 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.pieButton = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.lengthTrack = New System.Windows.Forms.TrackBar()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lengthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(703, 135)
+        Me.Label1.Location = New System.Drawing.Point(704, 183)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 11
@@ -89,7 +86,7 @@ Partial Class Form1
         'WidthTrack
         '
         Me.WidthTrack.LargeChange = 1
-        Me.WidthTrack.Location = New System.Drawing.Point(678, 151)
+        Me.WidthTrack.Location = New System.Drawing.Point(679, 199)
         Me.WidthTrack.Name = "WidthTrack"
         Me.WidthTrack.Size = New System.Drawing.Size(104, 45)
         Me.WidthTrack.TabIndex = 10
@@ -97,7 +94,7 @@ Partial Class Form1
         '
         'CustomColorButton
         '
-        Me.CustomColorButton.Location = New System.Drawing.Point(678, 105)
+        Me.CustomColorButton.Location = New System.Drawing.Point(679, 155)
         Me.CustomColorButton.Name = "CustomColorButton"
         Me.CustomColorButton.Size = New System.Drawing.Size(104, 25)
         Me.CustomColorButton.TabIndex = 7
@@ -292,30 +289,11 @@ Partial Class Form1
         Me.Button8.Text = "Button8"
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'lengthTrack
-        '
-        Me.lengthTrack.Location = New System.Drawing.Point(678, 202)
-        Me.lengthTrack.Maximum = 100
-        Me.lengthTrack.Name = "lengthTrack"
-        Me.lengthTrack.Size = New System.Drawing.Size(104, 45)
-        Me.lengthTrack.TabIndex = 111
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(712, 186)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
-        Me.Label4.TabIndex = 112
-        Me.Label4.Text = "Length"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(861, 450)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lengthTrack)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.pieButton)
@@ -348,7 +326,6 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lengthTrack, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -382,6 +359,4 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents pieButton As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents lengthTrack As TrackBar
-    Friend WithEvents Label4 As Label
 End Class

@@ -6,7 +6,6 @@
     Dim type As String
     Dim h As Integer
     Dim w As Integer
-    Dim l As Integer
     Private Sub pictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
         m_Previous = e.Location
         pictureBox1_MouseMove(sender, e)
@@ -48,7 +47,6 @@
                 d.Pen = New Pen(c, t)
                 d.w = w
                 d.h = h
-                d.l = l
             End If
             m_shapes.Add(d)
                 PictureBox1.Invalidate()
@@ -119,9 +117,6 @@
     End Sub
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         h = TrackBar1.Value
-    End Sub
-    Private Sub lengthTrack_Scroll(sender As Object, e As EventArgs) Handles lengthTrack.Scroll
-        l = lengthTrack.Value
     End Sub
     Private Sub rectButton_Click(sender As Object, e As EventArgs) Handles rectButton.Click
         type = "Rectangle"
