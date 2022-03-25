@@ -6,6 +6,7 @@
     Dim type As String
     Dim h As Integer
     Dim w As Integer
+    Dim l As Integer
     Private Sub pictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
         m_Previous = e.Location
         pictureBox1_MouseMove(sender, e)
@@ -41,6 +42,13 @@
                 d.Pen = New Pen(c, t)
                 d.w = w
                 d.h = h
+            End If
+            If type = "Poly" Then
+                d = New Polygon(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, t)
+                d.w = w
+                d.h = h
+                d.l = l
             End If
             m_shapes.Add(d)
                 PictureBox1.Invalidate()
@@ -112,6 +120,9 @@
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         h = TrackBar1.Value
     End Sub
+    Private Sub lengthTrack_Scroll(sender As Object, e As EventArgs) Handles lengthTrack.Scroll
+        l = lengthTrack.Value
+    End Sub
     Private Sub rectButton_Click(sender As Object, e As EventArgs) Handles rectButton.Click
         type = "Rectangle"
     End Sub
@@ -124,6 +135,9 @@
 
     Private Sub pieButton_Click(sender As Object, e As EventArgs) Handles pieButton.Click
         type = "Pie"
+    End Sub
+    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+        type = "Poly"
     End Sub
     Private Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
         Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
