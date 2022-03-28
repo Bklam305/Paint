@@ -48,6 +48,12 @@
                 d.w = w
                 d.h = h
             End If
+            If type = "Pentagon" Then
+                d = New Pentagon(PictureBox1.Image, m_Previous, e.Location)
+                d.pen = New Pen(c, t)
+                d.w = w
+                d.h = h
+            End If
             m_shapes.Add(d)
                 PictureBox1.Invalidate()
                 m_Previous = e.Location
@@ -107,16 +113,18 @@
     End Sub
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
         SaveFileDialog1.ShowDialog()
-        PictureBox1.Image.Save(SaveFileDialog1.FileName)
     End Sub
-    Private Sub liButton_Click(sender As Object, e As EventArgs) Handles liButton.Click
-        type = "Line"
+    Private Sub SaveFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveFileDialog1.FileOk
+        PictureBox1.Image.Save(SaveFileDialog1.FileName)
     End Sub
     Private Sub TrackBar2_Scroll(sender As Object, e As EventArgs) Handles TrackBar2.Scroll
         w = TrackBar2.Value
     End Sub
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         h = TrackBar1.Value
+    End Sub
+    Private Sub liButton_Click(sender As Object, e As EventArgs) Handles liButton.Click
+        type = "Line"
     End Sub
     Private Sub rectButton_Click(sender As Object, e As EventArgs) Handles rectButton.Click
         type = "Rectangle"
@@ -140,5 +148,9 @@
             g.Clear(Color.White)
         End Using
         PictureBox1.Image = bmp
+    End Sub
+
+    Private Sub Button8_Click_1(sender As Object, e As EventArgs) Handles Button8.Click
+        type = "Pentagon"
     End Sub
 End Class

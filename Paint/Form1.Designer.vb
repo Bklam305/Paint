@@ -181,6 +181,9 @@ Partial Class Form1
         Me.clearButton.Text = "Clear"
         Me.clearButton.UseVisualStyleBackColor = True
         '
+        'SaveFileDialog1
+        '
+        '
         'TrackBar1
         '
         Me.TrackBar1.Location = New System.Drawing.Point(678, 327)
@@ -286,7 +289,7 @@ Partial Class Form1
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(50, 50)
         Me.Button8.TabIndex = 110
-        Me.Button8.Text = "Button8"
+        Me.Button8.Text = "Pentagon"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Form1
