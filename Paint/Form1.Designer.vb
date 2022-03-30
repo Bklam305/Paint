@@ -50,16 +50,26 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.pieButton = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.drawBox = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.radiusBar = New System.Windows.Forms.TrackBar()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.sideUpDown = New System.Windows.Forms.NumericUpDown()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.drawBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.radiusBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.sideUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(704, 183)
+        Me.Label1.Location = New System.Drawing.Point(38, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 11
@@ -68,7 +78,7 @@ Partial Class Form1
         'organgeButton
         '
         Me.organgeButton.BackColor = System.Drawing.Color.Orange
-        Me.organgeButton.Location = New System.Drawing.Point(711, 12)
+        Me.organgeButton.Location = New System.Drawing.Point(41, 12)
         Me.organgeButton.Name = "organgeButton"
         Me.organgeButton.Size = New System.Drawing.Size(26, 25)
         Me.organgeButton.TabIndex = 10
@@ -77,7 +87,7 @@ Partial Class Form1
         'redButton
         '
         Me.redButton.BackColor = System.Drawing.Color.Red
-        Me.redButton.Location = New System.Drawing.Point(679, 12)
+        Me.redButton.Location = New System.Drawing.Point(9, 12)
         Me.redButton.Name = "redButton"
         Me.redButton.Size = New System.Drawing.Size(26, 25)
         Me.redButton.TabIndex = 9
@@ -86,7 +96,7 @@ Partial Class Form1
         'WidthTrack
         '
         Me.WidthTrack.LargeChange = 1
-        Me.WidthTrack.Location = New System.Drawing.Point(679, 199)
+        Me.WidthTrack.Location = New System.Drawing.Point(14, 80)
         Me.WidthTrack.Name = "WidthTrack"
         Me.WidthTrack.Size = New System.Drawing.Size(104, 45)
         Me.WidthTrack.TabIndex = 10
@@ -94,7 +104,7 @@ Partial Class Form1
         '
         'CustomColorButton
         '
-        Me.CustomColorButton.Location = New System.Drawing.Point(679, 155)
+        Me.CustomColorButton.Location = New System.Drawing.Point(188, 43)
         Me.CustomColorButton.Name = "CustomColorButton"
         Me.CustomColorButton.Size = New System.Drawing.Size(104, 25)
         Me.CustomColorButton.TabIndex = 7
@@ -104,7 +114,7 @@ Partial Class Form1
         'greenButton
         '
         Me.greenButton.BackColor = System.Drawing.Color.Green
-        Me.greenButton.Location = New System.Drawing.Point(743, 12)
+        Me.greenButton.Location = New System.Drawing.Point(73, 12)
         Me.greenButton.Name = "greenButton"
         Me.greenButton.Size = New System.Drawing.Size(26, 25)
         Me.greenButton.TabIndex = 13
@@ -113,7 +123,7 @@ Partial Class Form1
         'yellowButton
         '
         Me.yellowButton.BackColor = System.Drawing.Color.Yellow
-        Me.yellowButton.Location = New System.Drawing.Point(679, 43)
+        Me.yellowButton.Location = New System.Drawing.Point(105, 12)
         Me.yellowButton.Name = "yellowButton"
         Me.yellowButton.Size = New System.Drawing.Size(26, 25)
         Me.yellowButton.TabIndex = 12
@@ -122,7 +132,7 @@ Partial Class Form1
         'whiteButton
         '
         Me.whiteButton.BackColor = System.Drawing.Color.White
-        Me.whiteButton.Location = New System.Drawing.Point(743, 74)
+        Me.whiteButton.Location = New System.Drawing.Point(266, 12)
         Me.whiteButton.Name = "whiteButton"
         Me.whiteButton.Size = New System.Drawing.Size(26, 25)
         Me.whiteButton.TabIndex = 17
@@ -131,7 +141,7 @@ Partial Class Form1
         'blackButton
         '
         Me.blackButton.BackColor = System.Drawing.Color.Black
-        Me.blackButton.Location = New System.Drawing.Point(679, 74)
+        Me.blackButton.Location = New System.Drawing.Point(202, 12)
         Me.blackButton.Name = "blackButton"
         Me.blackButton.Size = New System.Drawing.Size(26, 25)
         Me.blackButton.TabIndex = 16
@@ -140,7 +150,7 @@ Partial Class Form1
         'purpleButton
         '
         Me.purpleButton.BackColor = System.Drawing.Color.Purple
-        Me.purpleButton.Location = New System.Drawing.Point(711, 43)
+        Me.purpleButton.Location = New System.Drawing.Point(137, 12)
         Me.purpleButton.Name = "purpleButton"
         Me.purpleButton.Size = New System.Drawing.Size(26, 25)
         Me.purpleButton.TabIndex = 15
@@ -149,7 +159,7 @@ Partial Class Form1
         'blueButton
         '
         Me.blueButton.BackColor = System.Drawing.Color.DodgerBlue
-        Me.blueButton.Location = New System.Drawing.Point(743, 43)
+        Me.blueButton.Location = New System.Drawing.Point(169, 12)
         Me.blueButton.Name = "blueButton"
         Me.blueButton.Size = New System.Drawing.Size(26, 25)
         Me.blueButton.TabIndex = 14
@@ -157,15 +167,15 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 15)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 131)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(666, 420)
+        Me.PictureBox1.Size = New System.Drawing.Size(843, 420)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
         'saveButton
         '
-        Me.saveButton.Location = New System.Drawing.Point(694, 378)
+        Me.saveButton.Location = New System.Drawing.Point(298, 12)
         Me.saveButton.Name = "saveButton"
         Me.saveButton.Size = New System.Drawing.Size(75, 23)
         Me.saveButton.TabIndex = 18
@@ -174,7 +184,7 @@ Partial Class Form1
         '
         'clearButton
         '
-        Me.clearButton.Location = New System.Drawing.Point(694, 407)
+        Me.clearButton.Location = New System.Drawing.Point(298, 41)
         Me.clearButton.Name = "clearButton"
         Me.clearButton.Size = New System.Drawing.Size(75, 23)
         Me.clearButton.TabIndex = 19
@@ -186,7 +196,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(678, 327)
+        Me.TrackBar1.Location = New System.Drawing.Point(234, 80)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
@@ -196,7 +206,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(712, 311)
+        Me.Label2.Location = New System.Drawing.Point(263, 71)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 13)
         Me.Label2.TabIndex = 21
@@ -204,7 +214,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(678, 263)
+        Me.TrackBar2.Location = New System.Drawing.Point(124, 80)
         Me.TrackBar2.Maximum = 100
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
@@ -214,7 +224,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(712, 247)
+        Me.Label3.Location = New System.Drawing.Point(157, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 102
@@ -223,7 +233,7 @@ Partial Class Form1
         'grayButton
         '
         Me.grayButton.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.grayButton.Location = New System.Drawing.Point(711, 74)
+        Me.grayButton.Location = New System.Drawing.Point(234, 12)
         Me.grayButton.Name = "grayButton"
         Me.grayButton.Size = New System.Drawing.Size(26, 25)
         Me.grayButton.TabIndex = 103
@@ -231,7 +241,7 @@ Partial Class Form1
         '
         'cirButton
         '
-        Me.cirButton.Location = New System.Drawing.Point(797, 15)
+        Me.cirButton.Location = New System.Drawing.Point(379, 12)
         Me.cirButton.Name = "cirButton"
         Me.cirButton.Size = New System.Drawing.Size(50, 50)
         Me.cirButton.TabIndex = 104
@@ -240,7 +250,7 @@ Partial Class Form1
         '
         'rectButton
         '
-        Me.rectButton.Location = New System.Drawing.Point(797, 74)
+        Me.rectButton.Location = New System.Drawing.Point(435, 12)
         Me.rectButton.Name = "rectButton"
         Me.rectButton.Size = New System.Drawing.Size(50, 50)
         Me.rectButton.TabIndex = 105
@@ -249,7 +259,7 @@ Partial Class Form1
         '
         'arcButton
         '
-        Me.arcButton.Location = New System.Drawing.Point(797, 199)
+        Me.arcButton.Location = New System.Drawing.Point(547, 12)
         Me.arcButton.Name = "arcButton"
         Me.arcButton.Size = New System.Drawing.Size(50, 50)
         Me.arcButton.TabIndex = 107
@@ -258,7 +268,7 @@ Partial Class Form1
         '
         'liButton
         '
-        Me.liButton.Location = New System.Drawing.Point(797, 137)
+        Me.liButton.Location = New System.Drawing.Point(491, 12)
         Me.liButton.Name = "liButton"
         Me.liButton.Size = New System.Drawing.Size(50, 50)
         Me.liButton.TabIndex = 106
@@ -267,7 +277,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(797, 327)
+        Me.Button5.Location = New System.Drawing.Point(659, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(50, 50)
         Me.Button5.TabIndex = 109
@@ -276,7 +286,7 @@ Partial Class Form1
         '
         'pieButton
         '
-        Me.pieButton.Location = New System.Drawing.Point(797, 263)
+        Me.pieButton.Location = New System.Drawing.Point(603, 12)
         Me.pieButton.Name = "pieButton"
         Me.pieButton.Size = New System.Drawing.Size(50, 50)
         Me.pieButton.TabIndex = 108
@@ -285,18 +295,80 @@ Partial Class Form1
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(797, 383)
+        Me.Button8.Location = New System.Drawing.Point(715, 12)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(50, 50)
         Me.Button8.TabIndex = 110
-        Me.Button8.Text = "Pentagon"
+        Me.Button8.Text = "n-Gon"
         Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(362, 69)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.TabIndex = 111
+        Me.Label4.Text = "Radius"
+        '
+        'drawBox
+        '
+        Me.drawBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.drawBox.Location = New System.Drawing.Point(547, 69)
+        Me.drawBox.Name = "drawBox"
+        Me.drawBox.Size = New System.Drawing.Size(97, 51)
+        Me.drawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.drawBox.TabIndex = 118
+        Me.drawBox.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(659, 68)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(50, 50)
+        Me.Button1.TabIndex = 119
+        Me.Button1.Text = "Insert" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Image"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'radiusBar
+        '
+        Me.radiusBar.Location = New System.Drawing.Point(344, 80)
+        Me.radiusBar.Maximum = 100
+        Me.radiusBar.Name = "radiusBar"
+        Me.radiusBar.Size = New System.Drawing.Size(104, 45)
+        Me.radiusBar.TabIndex = 120
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(466, 71)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(33, 13)
+        Me.Label6.TabIndex = 122
+        Me.Label6.Text = "Sides"
+        '
+        'sideUpDown
+        '
+        Me.sideUpDown.Location = New System.Drawing.Point(454, 87)
+        Me.sideUpDown.Name = "sideUpDown"
+        Me.sideUpDown.Size = New System.Drawing.Size(69, 20)
+        Me.sideUpDown.TabIndex = 123
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(861, 450)
+        Me.ClientSize = New System.Drawing.Size(861, 561)
+        Me.Controls.Add(Me.sideUpDown)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.radiusBar)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.drawBox)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.pieButton)
@@ -329,6 +401,9 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.drawBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.radiusBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.sideUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -362,4 +437,11 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents pieButton As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents drawBox As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents radiusBar As TrackBar
+    Friend WithEvents Label6 As Label
+    Friend WithEvents sideUpDown As NumericUpDown
 End Class

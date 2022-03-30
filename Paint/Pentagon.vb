@@ -1,11 +1,10 @@
 ﻿Public Class Pentagon
     Public Property Pen As Pen
+    Public Property r As Integer
+    Public Property s As Integer
     Dim m_image As Image
     Dim m_a As Point
     Dim m_b As Point
-    Public Property w As Integer
-    Public Property h As Integer
-    Dim points(4) As Point
     Public Sub New(i As Image, a As Point, b As Point)
         Pen = Pens.Red
         m_image = i
@@ -14,11 +13,14 @@
     End Sub
     Public Sub Draw()
         Using g As Graphics = Graphics.FromImage(m_image)
-            points(0) = New Point(m_a.X, m_a.Y)
-            points(1) = New Point(m_a.X, m_a.Y + h)
-            points(2) = New Point(m_a.X + w, m_a.Y)
-            points(3) = New Point(m_a.X + w, m_a.Y + h)
-            points(4) = New Point(m_a.X + w - 25, m_a.Y + h - 25)
+            Dim points(s - 1) As Point
+            For index = 0 To s - 1
+                Dim x As Integer
+                Dim y As Integer
+                y = Math.Sin(index * (2 * Math.PI / s)) * r
+                x = Math.Cos(index * (2 * Math.PI / s)) * r
+                points(index) = New Point(m_a.X + x, m_a.Y + y)
+            Next
             g.DrawPolygon(Pen, points)
         End Using
     End Sub

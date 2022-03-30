@@ -99,6 +99,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="MyRectangle.vb" />
+    <Compile Include="pbox.vb" />
     <Compile Include="Pentagon.vb" />
     <Compile Include="Pie.vb" />
     <Compile Include="Polygon.vb" />
