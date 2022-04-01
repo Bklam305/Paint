@@ -57,6 +57,9 @@ Partial Class Form1
         Me.radiusBar = New System.Windows.Forms.TrackBar()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.sideUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.xSpeedTrack = New System.Windows.Forms.TrackBar()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.refreshBox = New System.Windows.Forms.CheckBox()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +67,7 @@ Partial Class Form1
         CType(Me.drawBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.radiusBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sideUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.xSpeedTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -104,7 +108,7 @@ Partial Class Form1
         '
         'CustomColorButton
         '
-        Me.CustomColorButton.Location = New System.Drawing.Point(188, 43)
+        Me.CustomColorButton.Location = New System.Drawing.Point(9, 41)
         Me.CustomColorButton.Name = "CustomColorButton"
         Me.CustomColorButton.Size = New System.Drawing.Size(104, 25)
         Me.CustomColorButton.TabIndex = 7
@@ -314,7 +318,7 @@ Partial Class Form1
         'drawBox
         '
         Me.drawBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.drawBox.Location = New System.Drawing.Point(547, 69)
+        Me.drawBox.Location = New System.Drawing.Point(639, 68)
         Me.drawBox.Name = "drawBox"
         Me.drawBox.Size = New System.Drawing.Size(97, 51)
         Me.drawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -323,7 +327,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(659, 68)
+        Me.Button1.Location = New System.Drawing.Point(746, 68)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(50, 50)
         Me.Button1.TabIndex = 119
@@ -358,11 +362,41 @@ Partial Class Form1
         Me.sideUpDown.Size = New System.Drawing.Size(69, 20)
         Me.sideUpDown.TabIndex = 123
         '
+        'xSpeedTrack
+        '
+        Me.xSpeedTrack.Location = New System.Drawing.Point(529, 80)
+        Me.xSpeedTrack.Minimum = -10
+        Me.xSpeedTrack.Name = "xSpeedTrack"
+        Me.xSpeedTrack.Size = New System.Drawing.Size(104, 45)
+        Me.xSpeedTrack.TabIndex = 124
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(558, 71)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(38, 13)
+        Me.Label5.TabIndex = 125
+        Me.Label5.Text = "Speed"
+        '
+        'refreshBox
+        '
+        Me.refreshBox.AutoSize = True
+        Me.refreshBox.Location = New System.Drawing.Point(211, 45)
+        Me.refreshBox.Name = "refreshBox"
+        Me.refreshBox.Size = New System.Drawing.Size(88, 17)
+        Me.refreshBox.TabIndex = 126
+        Me.refreshBox.Text = "Auto Refresh"
+        Me.refreshBox.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(861, 561)
+        Me.Controls.Add(Me.refreshBox)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.xSpeedTrack)
         Me.Controls.Add(Me.sideUpDown)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.radiusBar)
@@ -404,6 +438,7 @@ Partial Class Form1
         CType(Me.drawBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.radiusBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.sideUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.xSpeedTrack, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -444,4 +479,7 @@ Partial Class Form1
     Friend WithEvents radiusBar As TrackBar
     Friend WithEvents Label6 As Label
     Friend WithEvents sideUpDown As NumericUpDown
+    Friend WithEvents xSpeedTrack As TrackBar
+    Friend WithEvents Label5 As Label
+    Friend WithEvents refreshBox As CheckBox
 End Class

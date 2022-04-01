@@ -19,6 +19,7 @@
             If type = "Line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, t)
+                d.xspeed = xSpeedTrack.Value
             End If
             If type = "Rectangle" Then
                 d = New MyRectangle(PictureBox1.Image, m_Previous, e.Location)
@@ -83,6 +84,9 @@
         For Each s As Object In m_shapes
             s.Draw()
         Next
+        If (refreshBox.Checked) Then
+            Refresh()
+        End If
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles redButton.Click
         c = sender.backcolor
