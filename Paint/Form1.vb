@@ -23,9 +23,12 @@
             End If
             If type = "Rectangle" Then
                 d = New MyRectangle(PictureBox1.Image, m_Previous, e.Location)
+                d.fill = CheckBox1.Checked
                 d.Pen = New Pen(c, t)
                 d.h = h
                 d.w = w
+                d.color1 = fill1Button.BackColor
+                d.color2 = fill2Button.BackColor
             End If
             If type = "Circle" Then
                 d = New Circle(PictureBox1.Image, m_Previous, e.Location)
@@ -87,6 +90,16 @@
         If (refreshBox.Checked) Then
             Refresh()
         End If
+    End Sub
+    Private Sub fill2Button_Click(sender As Object, e As EventArgs) Handles fill2Button.Click
+        ColorDialog1.ShowDialog()
+        c = ColorDialog1.Color
+        sender.backcolor = c
+    End Sub
+    Private Sub CustomColorButton_Click(sender As Object, e As EventArgs) Handles fill1Button.Click
+        ColorDialog1.ShowDialog()
+        c = ColorDialog1.Color
+        sender.backcolor = c
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles redButton.Click
         c = sender.backcolor
@@ -166,11 +179,6 @@
     End Sub
     Private Sub SaveFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveFileDialog1.FileOk
         PictureBox1.Image.Save(SaveFileDialog1.FileName)
-    End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles CustomColorButton.Click
-        ColorDialog1.ShowDialog()
-        c = ColorDialog1.Color
-        CustomColorButton.BackColor = c
     End Sub
     Private Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
         Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)

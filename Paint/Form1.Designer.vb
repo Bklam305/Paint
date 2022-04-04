@@ -26,7 +26,7 @@ Partial Class Form1
         Me.organgeButton = New System.Windows.Forms.Button()
         Me.redButton = New System.Windows.Forms.Button()
         Me.WidthTrack = New System.Windows.Forms.TrackBar()
-        Me.CustomColorButton = New System.Windows.Forms.Button()
+        Me.fill1Button = New System.Windows.Forms.Button()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.greenButton = New System.Windows.Forms.Button()
         Me.yellowButton = New System.Windows.Forms.Button()
@@ -60,6 +60,8 @@ Partial Class Form1
         Me.xSpeedTrack = New System.Windows.Forms.TrackBar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.refreshBox = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.fill2Button = New System.Windows.Forms.Button()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,14 +108,14 @@ Partial Class Form1
         Me.WidthTrack.TabIndex = 10
         Me.WidthTrack.TabStop = False
         '
-        'CustomColorButton
+        'fill1Button
         '
-        Me.CustomColorButton.Location = New System.Drawing.Point(9, 41)
-        Me.CustomColorButton.Name = "CustomColorButton"
-        Me.CustomColorButton.Size = New System.Drawing.Size(104, 25)
-        Me.CustomColorButton.TabIndex = 7
-        Me.CustomColorButton.Text = "Custom Color"
-        Me.CustomColorButton.UseVisualStyleBackColor = True
+        Me.fill1Button.Location = New System.Drawing.Point(9, 41)
+        Me.fill1Button.Name = "fill1Button"
+        Me.fill1Button.Size = New System.Drawing.Size(64, 25)
+        Me.fill1Button.TabIndex = 7
+        Me.fill1Button.Text = "Fill Color 1"
+        Me.fill1Button.UseVisualStyleBackColor = True
         '
         'greenButton
         '
@@ -389,11 +391,32 @@ Partial Class Form1
         Me.refreshBox.Text = "Auto Refresh"
         Me.refreshBox.UseVisualStyleBackColor = True
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(167, 45)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(38, 17)
+        Me.CheckBox1.TabIndex = 127
+        Me.CheckBox1.Text = "Fill"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'fill2Button
+        '
+        Me.fill2Button.Location = New System.Drawing.Point(79, 41)
+        Me.fill2Button.Name = "fill2Button"
+        Me.fill2Button.Size = New System.Drawing.Size(64, 25)
+        Me.fill2Button.TabIndex = 128
+        Me.fill2Button.Text = "Fill Color 2"
+        Me.fill2Button.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(861, 561)
+        Me.Controls.Add(Me.fill2Button)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.refreshBox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.xSpeedTrack)
@@ -427,7 +450,7 @@ Partial Class Form1
         Me.Controls.Add(Me.organgeButton)
         Me.Controls.Add(Me.redButton)
         Me.Controls.Add(Me.WidthTrack)
-        Me.Controls.Add(Me.CustomColorButton)
+        Me.Controls.Add(Me.fill1Button)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Drawing App"
@@ -448,7 +471,7 @@ Partial Class Form1
     Friend WithEvents organgeButton As Button
     Friend WithEvents redButton As Button
     Friend WithEvents WidthTrack As TrackBar
-    Friend WithEvents CustomColorButton As Button
+    Friend WithEvents fill1Button As Button
     Friend WithEvents ColorDialog1 As ColorDialog
     Friend WithEvents greenButton As Button
     Friend WithEvents yellowButton As Button
@@ -482,4 +505,6 @@ Partial Class Form1
     Friend WithEvents xSpeedTrack As TrackBar
     Friend WithEvents Label5 As Label
     Friend WithEvents refreshBox As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents fill2Button As Button
 End Class
