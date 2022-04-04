@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Arc.vb" />
     <Compile Include="Circle.vb" />
+    <Compile Include="CircleBrush.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +104,7 @@
     <Compile Include="Pentagon.vb" />
     <Compile Include="Pie.vb" />
     <Compile Include="Polygon.vb" />
+    <Compile Include="RectangleBrush.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

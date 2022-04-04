@@ -62,6 +62,8 @@ Partial Class Form1
         Me.refreshBox = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.fill2Button = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +77,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(38, 69)
+        Me.Label1.Location = New System.Drawing.Point(43, 92)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 11
@@ -102,7 +104,7 @@ Partial Class Form1
         'WidthTrack
         '
         Me.WidthTrack.LargeChange = 1
-        Me.WidthTrack.Location = New System.Drawing.Point(14, 80)
+        Me.WidthTrack.Location = New System.Drawing.Point(14, 108)
         Me.WidthTrack.Name = "WidthTrack"
         Me.WidthTrack.Size = New System.Drawing.Size(104, 45)
         Me.WidthTrack.TabIndex = 10
@@ -173,9 +175,9 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 131)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 159)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(843, 420)
+        Me.PictureBox1.Size = New System.Drawing.Size(843, 392)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
@@ -202,7 +204,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(234, 80)
+        Me.TrackBar1.Location = New System.Drawing.Point(234, 108)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
@@ -212,7 +214,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(263, 71)
+        Me.Label2.Location = New System.Drawing.Point(273, 92)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 13)
         Me.Label2.TabIndex = 21
@@ -220,7 +222,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(124, 80)
+        Me.TrackBar2.Location = New System.Drawing.Point(124, 108)
         Me.TrackBar2.Maximum = 100
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
@@ -230,7 +232,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(157, 69)
+        Me.Label3.Location = New System.Drawing.Point(160, 92)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 102
@@ -249,7 +251,7 @@ Partial Class Form1
         '
         Me.cirButton.Location = New System.Drawing.Point(379, 12)
         Me.cirButton.Name = "cirButton"
-        Me.cirButton.Size = New System.Drawing.Size(50, 50)
+        Me.cirButton.Size = New System.Drawing.Size(50, 35)
         Me.cirButton.TabIndex = 104
         Me.cirButton.Text = "Circles"
         Me.cirButton.UseVisualStyleBackColor = True
@@ -258,7 +260,7 @@ Partial Class Form1
         '
         Me.rectButton.Location = New System.Drawing.Point(435, 12)
         Me.rectButton.Name = "rectButton"
-        Me.rectButton.Size = New System.Drawing.Size(50, 50)
+        Me.rectButton.Size = New System.Drawing.Size(50, 35)
         Me.rectButton.TabIndex = 105
         Me.rectButton.Text = "Rectangles"
         Me.rectButton.UseVisualStyleBackColor = True
@@ -267,7 +269,7 @@ Partial Class Form1
         '
         Me.arcButton.Location = New System.Drawing.Point(547, 12)
         Me.arcButton.Name = "arcButton"
-        Me.arcButton.Size = New System.Drawing.Size(50, 50)
+        Me.arcButton.Size = New System.Drawing.Size(50, 35)
         Me.arcButton.TabIndex = 107
         Me.arcButton.Text = "Arcs"
         Me.arcButton.UseVisualStyleBackColor = True
@@ -276,7 +278,7 @@ Partial Class Form1
         '
         Me.liButton.Location = New System.Drawing.Point(491, 12)
         Me.liButton.Name = "liButton"
-        Me.liButton.Size = New System.Drawing.Size(50, 50)
+        Me.liButton.Size = New System.Drawing.Size(50, 35)
         Me.liButton.TabIndex = 106
         Me.liButton.Text = "Line"
         Me.liButton.UseVisualStyleBackColor = True
@@ -285,7 +287,7 @@ Partial Class Form1
         '
         Me.Button5.Location = New System.Drawing.Point(659, 12)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(50, 50)
+        Me.Button5.Size = New System.Drawing.Size(50, 35)
         Me.Button5.TabIndex = 109
         Me.Button5.Text = "Polygon"
         Me.Button5.UseVisualStyleBackColor = True
@@ -294,7 +296,7 @@ Partial Class Form1
         '
         Me.pieButton.Location = New System.Drawing.Point(603, 12)
         Me.pieButton.Name = "pieButton"
-        Me.pieButton.Size = New System.Drawing.Size(50, 50)
+        Me.pieButton.Size = New System.Drawing.Size(50, 35)
         Me.pieButton.TabIndex = 108
         Me.pieButton.Text = "Pies"
         Me.pieButton.UseVisualStyleBackColor = True
@@ -303,7 +305,7 @@ Partial Class Form1
         '
         Me.Button8.Location = New System.Drawing.Point(715, 12)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(50, 50)
+        Me.Button8.Size = New System.Drawing.Size(50, 35)
         Me.Button8.TabIndex = 110
         Me.Button8.Text = "n-Gon"
         Me.Button8.UseVisualStyleBackColor = True
@@ -311,7 +313,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(362, 69)
+        Me.Label4.Location = New System.Drawing.Point(376, 92)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(40, 13)
         Me.Label4.TabIndex = 111
@@ -320,7 +322,7 @@ Partial Class Form1
         'drawBox
         '
         Me.drawBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.drawBox.Location = New System.Drawing.Point(639, 68)
+        Me.drawBox.Location = New System.Drawing.Point(639, 108)
         Me.drawBox.Name = "drawBox"
         Me.drawBox.Size = New System.Drawing.Size(97, 51)
         Me.drawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -329,7 +331,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(746, 68)
+        Me.Button1.Location = New System.Drawing.Point(742, 109)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(50, 50)
         Me.Button1.TabIndex = 119
@@ -342,7 +344,7 @@ Partial Class Form1
         '
         'radiusBar
         '
-        Me.radiusBar.Location = New System.Drawing.Point(344, 80)
+        Me.radiusBar.Location = New System.Drawing.Point(344, 108)
         Me.radiusBar.Maximum = 100
         Me.radiusBar.Name = "radiusBar"
         Me.radiusBar.Size = New System.Drawing.Size(104, 45)
@@ -351,7 +353,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(466, 71)
+        Me.Label6.Location = New System.Drawing.Point(469, 92)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(33, 13)
         Me.Label6.TabIndex = 122
@@ -359,14 +361,14 @@ Partial Class Form1
         '
         'sideUpDown
         '
-        Me.sideUpDown.Location = New System.Drawing.Point(454, 87)
+        Me.sideUpDown.Location = New System.Drawing.Point(454, 115)
         Me.sideUpDown.Name = "sideUpDown"
         Me.sideUpDown.Size = New System.Drawing.Size(69, 20)
         Me.sideUpDown.TabIndex = 123
         '
         'xSpeedTrack
         '
-        Me.xSpeedTrack.Location = New System.Drawing.Point(529, 80)
+        Me.xSpeedTrack.Location = New System.Drawing.Point(529, 108)
         Me.xSpeedTrack.Minimum = -10
         Me.xSpeedTrack.Name = "xSpeedTrack"
         Me.xSpeedTrack.Size = New System.Drawing.Size(104, 45)
@@ -375,7 +377,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(558, 71)
+        Me.Label5.Location = New System.Drawing.Point(559, 92)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(38, 13)
         Me.Label5.TabIndex = 125
@@ -410,11 +412,31 @@ Partial Class Form1
         Me.fill2Button.Text = "Fill Color 2"
         Me.fill2Button.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(435, 49)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(50, 40)
+        Me.Button2.TabIndex = 129
+        Me.Button2.Text = "Rect Brush"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(379, 47)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(50, 42)
+        Me.Button3.TabIndex = 130
+        Me.Button3.Text = "Circle Brush"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(861, 561)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.fill2Button)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.refreshBox)
@@ -507,4 +529,6 @@ Partial Class Form1
     Friend WithEvents refreshBox As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents fill2Button As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

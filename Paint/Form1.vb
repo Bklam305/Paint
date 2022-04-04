@@ -23,12 +23,9 @@
             End If
             If type = "Rectangle" Then
                 d = New MyRectangle(PictureBox1.Image, m_Previous, e.Location)
-                d.fill = CheckBox1.Checked
                 d.Pen = New Pen(c, t)
                 d.h = h
                 d.w = w
-                d.color1 = fill1Button.BackColor
-                d.color2 = fill2Button.BackColor
             End If
             If type = "Circle" Then
                 d = New Circle(PictureBox1.Image, m_Previous, e.Location)
@@ -66,10 +63,26 @@
                 d.w = w
                 d.h = h
             End If
+            If type = "Rectangle Brush" Then
+                d = New RectangleBrush(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, t)
+                d.h = h
+                d.w = w
+                d.color1 = fill1Button.BackColor
+                d.color2 = fill2Button.BackColor
+            End If
+            If type = "Circle Brush" Then
+                d = New CircleBrush(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, t)
+                d.h = h
+                d.w = w
+                d.color1 = fill1Button.BackColor
+                d.color2 = fill2Button.BackColor
+            End If
             m_shapes.Add(d)
-            PictureBox1.Invalidate()
-            m_Previous = e.Location
-        End If
+                PictureBox1.Invalidate()
+                m_Previous = e.Location
+            End If
     End Sub
     Private Sub pictureBox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
         m_Previous = Nothing
@@ -167,6 +180,12 @@
     End Sub
     Private Sub drawBox_Click(sender As Object, e As EventArgs) Handles drawBox.Click
         type = "Picture"
+    End Sub
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        type = "Rectangle Brush"
+    End Sub
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        type = "Circle Brush"
     End Sub
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         OpenFileDialog1.ShowDialog()
