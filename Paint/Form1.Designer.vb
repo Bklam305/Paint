@@ -60,7 +60,6 @@ Partial Class Form1
         Me.xSpeedTrack = New System.Windows.Forms.TrackBar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.refreshBox = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.fill2Button = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -386,22 +385,12 @@ Partial Class Form1
         'refreshBox
         '
         Me.refreshBox.AutoSize = True
-        Me.refreshBox.Location = New System.Drawing.Point(211, 45)
+        Me.refreshBox.Location = New System.Drawing.Point(172, 45)
         Me.refreshBox.Name = "refreshBox"
         Me.refreshBox.Size = New System.Drawing.Size(88, 17)
         Me.refreshBox.TabIndex = 126
         Me.refreshBox.Text = "Auto Refresh"
         Me.refreshBox.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(167, 45)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(38, 17)
-        Me.CheckBox1.TabIndex = 127
-        Me.CheckBox1.Text = "Fill"
-        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'fill2Button
         '
@@ -423,9 +412,9 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(379, 47)
+        Me.Button3.Location = New System.Drawing.Point(379, 49)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(50, 42)
+        Me.Button3.Size = New System.Drawing.Size(50, 40)
         Me.Button3.TabIndex = 130
         Me.Button3.Text = "Circle Brush"
         Me.Button3.UseVisualStyleBackColor = True
@@ -438,7 +427,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.fill2Button)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.refreshBox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.xSpeedTrack)
@@ -527,7 +515,6 @@ Partial Class Form1
     Friend WithEvents xSpeedTrack As TrackBar
     Friend WithEvents Label5 As Label
     Friend WithEvents refreshBox As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents fill2Button As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
