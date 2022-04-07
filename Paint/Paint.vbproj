@@ -129,5 +129,26 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nGon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangleButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circleButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineButton.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

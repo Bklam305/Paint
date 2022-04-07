@@ -114,7 +114,7 @@
         c = ColorDialog1.Color
         sender.backcolor = c
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles redButton.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) 
         c = sender.backcolor
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles organgeButton.Click
@@ -123,16 +123,16 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles yellowButton.Click
         c = sender.backcolor
     End Sub
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles greenButton.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) 
         c = sender.backcolor
     End Sub
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles blueButton.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) 
         c = sender.backcolor
     End Sub
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles purpleButton.Click
         c = sender.backcolor
     End Sub
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles blackButton.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs) 
         c = sender.backcolor
     End Sub
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles whiteButton.Click
