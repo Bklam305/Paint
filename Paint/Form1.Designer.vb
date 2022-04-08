@@ -25,29 +25,14 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.organgeButton = New System.Windows.Forms.Button()
         Me.WidthTrack = New System.Windows.Forms.TrackBar()
-        Me.fill1Button = New System.Windows.Forms.Button()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
-        Me.yellowButton = New System.Windows.Forms.Button()
-        Me.whiteButton = New System.Windows.Forms.Button()
-        Me.purpleButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.saveButton = New System.Windows.Forms.Button()
-        Me.clearButton = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.grayButton = New System.Windows.Forms.Button()
-        Me.cirButton = New System.Windows.Forms.Button()
-        Me.rectButton = New System.Windows.Forms.Button()
-        Me.arcButton = New System.Windows.Forms.Button()
-        Me.liButton = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.pieButton = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.drawBox = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -58,9 +43,6 @@ Partial Class Form1
         Me.xSpeedTrack = New System.Windows.Forms.TrackBar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.refreshBox = New System.Windows.Forms.CheckBox()
-        Me.fill2Button = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.lineButton = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -69,21 +51,36 @@ Partial Class Form1
         Me.arcsButton = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.nGonButton = New System.Windows.Forms.ToolStripButton()
-        Me.piesButton = New System.Windows.Forms.ToolStripButton()
-        Me.rectsButton = New System.Windows.Forms.ToolStripButton()
-        Me.triButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.piesButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.rectsButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.triButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.circleBrush = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
+        Me.squareBrush = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator14 = New System.Windows.Forms.ToolStripSeparator()
         Me.redButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.blackButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.greenButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.blueButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
+        Me.greenButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
+        Me.blackButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.fill1Button = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.fill2Button = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
+        Me.saveButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator()
+        Me.clearButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator()
+        Me.imageinsert = New System.Windows.Forms.ToolStripButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,103 +91,42 @@ Partial Class Form1
         CType(Me.xSpeedTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(63, 301)
+        Me.Label1.Location = New System.Drawing.Point(45, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Thickness"
         '
-        'organgeButton
-        '
-        Me.organgeButton.BackColor = System.Drawing.Color.Orange
-        Me.organgeButton.Location = New System.Drawing.Point(52, 97)
-        Me.organgeButton.Name = "organgeButton"
-        Me.organgeButton.Size = New System.Drawing.Size(26, 25)
-        Me.organgeButton.TabIndex = 10
-        Me.organgeButton.UseVisualStyleBackColor = False
-        '
         'WidthTrack
         '
         Me.WidthTrack.LargeChange = 1
-        Me.WidthTrack.Location = New System.Drawing.Point(34, 317)
+        Me.WidthTrack.Location = New System.Drawing.Point(16, 26)
         Me.WidthTrack.Name = "WidthTrack"
         Me.WidthTrack.Size = New System.Drawing.Size(104, 45)
         Me.WidthTrack.TabIndex = 10
         Me.WidthTrack.TabStop = False
         '
-        'fill1Button
-        '
-        Me.fill1Button.Location = New System.Drawing.Point(20, 126)
-        Me.fill1Button.Name = "fill1Button"
-        Me.fill1Button.Size = New System.Drawing.Size(64, 25)
-        Me.fill1Button.TabIndex = 7
-        Me.fill1Button.Text = "Fill Color 1"
-        Me.fill1Button.UseVisualStyleBackColor = True
-        '
-        'yellowButton
-        '
-        Me.yellowButton.BackColor = System.Drawing.Color.Yellow
-        Me.yellowButton.Location = New System.Drawing.Point(116, 97)
-        Me.yellowButton.Name = "yellowButton"
-        Me.yellowButton.Size = New System.Drawing.Size(26, 25)
-        Me.yellowButton.TabIndex = 12
-        Me.yellowButton.UseVisualStyleBackColor = False
-        '
-        'whiteButton
-        '
-        Me.whiteButton.BackColor = System.Drawing.Color.White
-        Me.whiteButton.Location = New System.Drawing.Point(277, 97)
-        Me.whiteButton.Name = "whiteButton"
-        Me.whiteButton.Size = New System.Drawing.Size(26, 25)
-        Me.whiteButton.TabIndex = 17
-        Me.whiteButton.UseVisualStyleBackColor = False
-        '
-        'purpleButton
-        '
-        Me.purpleButton.BackColor = System.Drawing.Color.Purple
-        Me.purpleButton.Location = New System.Drawing.Point(148, 97)
-        Me.purpleButton.Name = "purpleButton"
-        Me.purpleButton.Size = New System.Drawing.Size(26, 25)
-        Me.purpleButton.TabIndex = 15
-        Me.purpleButton.UseVisualStyleBackColor = False
-        '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 210)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 78)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(843, 392)
+        Me.PictureBox1.Size = New System.Drawing.Size(843, 524)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
-        '
-        'saveButton
-        '
-        Me.saveButton.Location = New System.Drawing.Point(305, 101)
-        Me.saveButton.Name = "saveButton"
-        Me.saveButton.Size = New System.Drawing.Size(75, 23)
-        Me.saveButton.TabIndex = 18
-        Me.saveButton.Text = "Save"
-        Me.saveButton.UseVisualStyleBackColor = True
-        '
-        'clearButton
-        '
-        Me.clearButton.Location = New System.Drawing.Point(305, 130)
-        Me.clearButton.Name = "clearButton"
-        Me.clearButton.Size = New System.Drawing.Size(75, 23)
-        Me.clearButton.TabIndex = 19
-        Me.clearButton.Text = "Clear"
-        Me.clearButton.UseVisualStyleBackColor = True
         '
         'SaveFileDialog1
         '
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(254, 317)
+        Me.TrackBar1.Location = New System.Drawing.Point(16, 92)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
@@ -200,7 +136,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(293, 301)
+        Me.Label2.Location = New System.Drawing.Point(55, 76)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 13)
         Me.Label2.TabIndex = 21
@@ -208,7 +144,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(144, 317)
+        Me.TrackBar2.Location = New System.Drawing.Point(144, 26)
         Me.TrackBar2.Maximum = 100
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
@@ -218,88 +154,16 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(180, 301)
+        Me.Label3.Location = New System.Drawing.Point(180, 10)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 102
         Me.Label3.Text = "Width"
         '
-        'grayButton
-        '
-        Me.grayButton.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.grayButton.Location = New System.Drawing.Point(245, 97)
-        Me.grayButton.Name = "grayButton"
-        Me.grayButton.Size = New System.Drawing.Size(26, 25)
-        Me.grayButton.TabIndex = 103
-        Me.grayButton.UseVisualStyleBackColor = False
-        '
-        'cirButton
-        '
-        Me.cirButton.Location = New System.Drawing.Point(386, 101)
-        Me.cirButton.Name = "cirButton"
-        Me.cirButton.Size = New System.Drawing.Size(50, 35)
-        Me.cirButton.TabIndex = 104
-        Me.cirButton.Text = "Circles"
-        Me.cirButton.UseVisualStyleBackColor = True
-        '
-        'rectButton
-        '
-        Me.rectButton.Location = New System.Drawing.Point(442, 101)
-        Me.rectButton.Name = "rectButton"
-        Me.rectButton.Size = New System.Drawing.Size(50, 35)
-        Me.rectButton.TabIndex = 105
-        Me.rectButton.Text = "Rectangles"
-        Me.rectButton.UseVisualStyleBackColor = True
-        '
-        'arcButton
-        '
-        Me.arcButton.Location = New System.Drawing.Point(554, 101)
-        Me.arcButton.Name = "arcButton"
-        Me.arcButton.Size = New System.Drawing.Size(50, 35)
-        Me.arcButton.TabIndex = 107
-        Me.arcButton.Text = "Arcs"
-        Me.arcButton.UseVisualStyleBackColor = True
-        '
-        'liButton
-        '
-        Me.liButton.Location = New System.Drawing.Point(498, 101)
-        Me.liButton.Name = "liButton"
-        Me.liButton.Size = New System.Drawing.Size(50, 35)
-        Me.liButton.TabIndex = 106
-        Me.liButton.Text = "Line"
-        Me.liButton.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(666, 101)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(50, 35)
-        Me.Button5.TabIndex = 109
-        Me.Button5.Text = "Polygon"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'pieButton
-        '
-        Me.pieButton.Location = New System.Drawing.Point(610, 101)
-        Me.pieButton.Name = "pieButton"
-        Me.pieButton.Size = New System.Drawing.Size(50, 35)
-        Me.pieButton.TabIndex = 108
-        Me.pieButton.Text = "Pies"
-        Me.pieButton.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(722, 101)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(50, 35)
-        Me.Button8.TabIndex = 110
-        Me.Button8.Text = "n-Gon"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(396, 301)
+        Me.Label4.Location = New System.Drawing.Point(193, 11)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(40, 13)
         Me.Label4.TabIndex = 111
@@ -308,7 +172,7 @@ Partial Class Form1
         'drawBox
         '
         Me.drawBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.drawBox.Location = New System.Drawing.Point(659, 306)
+        Me.drawBox.Location = New System.Drawing.Point(667, 342)
         Me.drawBox.Name = "drawBox"
         Me.drawBox.Size = New System.Drawing.Size(97, 51)
         Me.drawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -317,7 +181,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(762, 307)
+        Me.Button1.Location = New System.Drawing.Point(770, 343)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(50, 50)
         Me.Button1.TabIndex = 119
@@ -330,7 +194,7 @@ Partial Class Form1
         '
         'radiusBar
         '
-        Me.radiusBar.Location = New System.Drawing.Point(364, 317)
+        Me.radiusBar.Location = New System.Drawing.Point(161, 27)
         Me.radiusBar.Maximum = 100
         Me.radiusBar.Name = "radiusBar"
         Me.radiusBar.Size = New System.Drawing.Size(104, 45)
@@ -339,7 +203,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(489, 301)
+        Me.Label6.Location = New System.Drawing.Point(190, 83)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(33, 13)
         Me.Label6.TabIndex = 122
@@ -347,14 +211,14 @@ Partial Class Form1
         '
         'sideUpDown
         '
-        Me.sideUpDown.Location = New System.Drawing.Point(474, 324)
+        Me.sideUpDown.Location = New System.Drawing.Point(175, 106)
         Me.sideUpDown.Name = "sideUpDown"
         Me.sideUpDown.Size = New System.Drawing.Size(69, 20)
         Me.sideUpDown.TabIndex = 123
         '
         'xSpeedTrack
         '
-        Me.xSpeedTrack.Location = New System.Drawing.Point(549, 317)
+        Me.xSpeedTrack.Location = New System.Drawing.Point(3, 106)
         Me.xSpeedTrack.Minimum = -10
         Me.xSpeedTrack.Name = "xSpeedTrack"
         Me.xSpeedTrack.Size = New System.Drawing.Size(104, 45)
@@ -363,7 +227,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(579, 301)
+        Me.Label5.Location = New System.Drawing.Point(42, 90)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(38, 13)
         Me.Label5.TabIndex = 125
@@ -372,39 +236,12 @@ Partial Class Form1
         'refreshBox
         '
         Me.refreshBox.AutoSize = True
-        Me.refreshBox.Location = New System.Drawing.Point(183, 130)
+        Me.refreshBox.Location = New System.Drawing.Point(748, 52)
         Me.refreshBox.Name = "refreshBox"
         Me.refreshBox.Size = New System.Drawing.Size(88, 17)
         Me.refreshBox.TabIndex = 126
         Me.refreshBox.Text = "Auto Refresh"
         Me.refreshBox.UseVisualStyleBackColor = True
-        '
-        'fill2Button
-        '
-        Me.fill2Button.Location = New System.Drawing.Point(90, 126)
-        Me.fill2Button.Name = "fill2Button"
-        Me.fill2Button.Size = New System.Drawing.Size(64, 25)
-        Me.fill2Button.TabIndex = 128
-        Me.fill2Button.Text = "Fill Color 2"
-        Me.fill2Button.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(442, 138)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(50, 40)
-        Me.Button2.TabIndex = 129
-        Me.Button2.Text = "Rect Brush"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(386, 138)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(50, 40)
-        Me.Button3.TabIndex = 130
-        Me.Button3.Text = "Circle Brush"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'BindingNavigator1
         '
@@ -412,7 +249,7 @@ Partial Class Form1
         Me.BindingNavigator1.AutoSize = False
         Me.BindingNavigator1.CountItem = Nothing
         Me.BindingNavigator1.DeleteItem = Nothing
-        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lineButton, Me.BindingNavigatorSeparator, Me.circleButton, Me.BindingNavigatorSeparator1, Me.arcsButton, Me.BindingNavigatorSeparator2, Me.nGonButton, Me.ToolStripSeparator3, Me.piesButton, Me.ToolStripSeparator1, Me.rectsButton, Me.ToolStripSeparator2, Me.triButton, Me.ToolStripSeparator4, Me.redButton, Me.ToolStripSeparator5, Me.blueButton, Me.ToolStripSeparator8, Me.greenButton, Me.ToolStripSeparator7, Me.blackButton, Me.ToolStripSeparator6})
+        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lineButton, Me.BindingNavigatorSeparator, Me.circleButton, Me.BindingNavigatorSeparator1, Me.arcsButton, Me.BindingNavigatorSeparator2, Me.nGonButton, Me.ToolStripSeparator3, Me.piesButton, Me.ToolStripSeparator1, Me.rectsButton, Me.ToolStripSeparator2, Me.triButton, Me.ToolStripSeparator4, Me.circleBrush, Me.ToolStripSeparator13, Me.squareBrush, Me.ToolStripSeparator14, Me.redButton, Me.ToolStripSeparator5, Me.blueButton, Me.ToolStripSeparator8, Me.greenButton, Me.ToolStripSeparator7, Me.blackButton, Me.ToolStripSeparator6, Me.fill1Button, Me.ToolStripSeparator9, Me.fill2Button, Me.ToolStripSeparator10, Me.saveButton, Me.ToolStripSeparator11, Me.clearButton, Me.ToolStripSeparator12, Me.imageinsert})
         Me.BindingNavigator1.Location = New System.Drawing.Point(0, 0)
         Me.BindingNavigator1.MoveFirstItem = Nothing
         Me.BindingNavigator1.MoveLastItem = Nothing
@@ -420,7 +257,7 @@ Partial Class Form1
         Me.BindingNavigator1.MovePreviousItem = Nothing
         Me.BindingNavigator1.Name = "BindingNavigator1"
         Me.BindingNavigator1.PositionItem = Nothing
-        Me.BindingNavigator1.Size = New System.Drawing.Size(861, 65)
+        Me.BindingNavigator1.Size = New System.Drawing.Size(861, 35)
         Me.BindingNavigator1.Stretch = True
         Me.BindingNavigator1.TabIndex = 131
         Me.BindingNavigator1.Text = "BindingNavigator1"
@@ -439,7 +276,7 @@ Partial Class Form1
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 65)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 35)
         '
         'circleButton
         '
@@ -454,7 +291,7 @@ Partial Class Form1
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 65)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 35)
         '
         'arcsButton
         '
@@ -469,7 +306,7 @@ Partial Class Form1
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 65)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 35)
         '
         'nGonButton
         '
@@ -481,6 +318,11 @@ Partial Class Form1
         Me.nGonButton.Size = New System.Drawing.Size(40, 40)
         Me.nGonButton.Text = "ToolStripButton1"
         '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 35)
+        '
         'piesButton
         '
         Me.piesButton.AutoSize = False
@@ -490,6 +332,11 @@ Partial Class Form1
         Me.piesButton.Name = "piesButton"
         Me.piesButton.Size = New System.Drawing.Size(40, 40)
         Me.piesButton.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 35)
         '
         'rectsButton
         '
@@ -501,6 +348,11 @@ Partial Class Form1
         Me.rectsButton.Size = New System.Drawing.Size(40, 40)
         Me.rectsButton.Text = "ToolStripButton1"
         '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 35)
+        '
         'triButton
         '
         Me.triButton.AutoSize = False
@@ -511,25 +363,40 @@ Partial Class Form1
         Me.triButton.Size = New System.Drawing.Size(40, 40)
         Me.triButton.Text = "ToolStripButton1"
         '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 65)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 65)
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 65)
-        '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 65)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 35)
+        '
+        'circleBrush
+        '
+        Me.circleBrush.AutoSize = False
+        Me.circleBrush.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.circleBrush.Image = CType(resources.GetObject("circleBrush.Image"), System.Drawing.Image)
+        Me.circleBrush.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.circleBrush.Name = "circleBrush"
+        Me.circleBrush.Size = New System.Drawing.Size(40, 40)
+        Me.circleBrush.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator13
+        '
+        Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 35)
+        '
+        'squareBrush
+        '
+        Me.squareBrush.AutoSize = False
+        Me.squareBrush.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.squareBrush.Image = CType(resources.GetObject("squareBrush.Image"), System.Drawing.Image)
+        Me.squareBrush.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.squareBrush.Name = "squareBrush"
+        Me.squareBrush.Size = New System.Drawing.Size(40, 40)
+        Me.squareBrush.Text = "ToolStripButton2"
+        '
+        'ToolStripSeparator14
+        '
+        Me.ToolStripSeparator14.Name = "ToolStripSeparator14"
+        Me.ToolStripSeparator14.Size = New System.Drawing.Size(6, 35)
         '
         'redButton
         '
@@ -545,39 +412,7 @@ Partial Class Form1
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 65)
-        '
-        'blackButton
-        '
-        Me.blackButton.AutoSize = False
-        Me.blackButton.BackColor = System.Drawing.Color.Black
-        Me.blackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None
-        Me.blackButton.Image = CType(resources.GetObject("blackButton.Image"), System.Drawing.Image)
-        Me.blackButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.blackButton.Name = "blackButton"
-        Me.blackButton.Size = New System.Drawing.Size(25, 25)
-        Me.blackButton.Text = "ToolStripButton1"
-        '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 65)
-        '
-        'greenButton
-        '
-        Me.greenButton.AutoSize = False
-        Me.greenButton.BackColor = System.Drawing.Color.Green
-        Me.greenButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None
-        Me.greenButton.Image = CType(resources.GetObject("greenButton.Image"), System.Drawing.Image)
-        Me.greenButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.greenButton.Name = "greenButton"
-        Me.greenButton.Size = New System.Drawing.Size(25, 25)
-        Me.greenButton.Text = "ToolStripButton1"
-        '
-        'ToolStripSeparator7
-        '
-        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 65)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 35)
         '
         'blueButton
         '
@@ -593,47 +428,147 @@ Partial Class Form1
         'ToolStripSeparator8
         '
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 65)
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 35)
+        '
+        'greenButton
+        '
+        Me.greenButton.AutoSize = False
+        Me.greenButton.BackColor = System.Drawing.Color.Green
+        Me.greenButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None
+        Me.greenButton.Image = CType(resources.GetObject("greenButton.Image"), System.Drawing.Image)
+        Me.greenButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.greenButton.Name = "greenButton"
+        Me.greenButton.Size = New System.Drawing.Size(25, 25)
+        Me.greenButton.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator7
+        '
+        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 35)
+        '
+        'blackButton
+        '
+        Me.blackButton.AutoSize = False
+        Me.blackButton.BackColor = System.Drawing.Color.Black
+        Me.blackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.None
+        Me.blackButton.Image = CType(resources.GetObject("blackButton.Image"), System.Drawing.Image)
+        Me.blackButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.blackButton.Name = "blackButton"
+        Me.blackButton.Size = New System.Drawing.Size(25, 25)
+        Me.blackButton.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 35)
+        '
+        'fill1Button
+        '
+        Me.fill1Button.AutoSize = False
+        Me.fill1Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.fill1Button.Image = CType(resources.GetObject("fill1Button.Image"), System.Drawing.Image)
+        Me.fill1Button.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.fill1Button.Name = "fill1Button"
+        Me.fill1Button.Size = New System.Drawing.Size(40, 40)
+        Me.fill1Button.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 35)
+        '
+        'fill2Button
+        '
+        Me.fill2Button.AutoSize = False
+        Me.fill2Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.fill2Button.Image = CType(resources.GetObject("fill2Button.Image"), System.Drawing.Image)
+        Me.fill2Button.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.fill2Button.Name = "fill2Button"
+        Me.fill2Button.Size = New System.Drawing.Size(40, 40)
+        Me.fill2Button.Text = "ToolStripButton2"
+        '
+        'ToolStripSeparator10
+        '
+        Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 35)
+        '
+        'saveButton
+        '
+        Me.saveButton.AutoSize = False
+        Me.saveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.saveButton.Image = CType(resources.GetObject("saveButton.Image"), System.Drawing.Image)
+        Me.saveButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.saveButton.Name = "saveButton"
+        Me.saveButton.Size = New System.Drawing.Size(40, 40)
+        Me.saveButton.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator11
+        '
+        Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
+        Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 35)
+        '
+        'clearButton
+        '
+        Me.clearButton.AutoSize = False
+        Me.clearButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.clearButton.Image = CType(resources.GetObject("clearButton.Image"), System.Drawing.Image)
+        Me.clearButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.clearButton.Name = "clearButton"
+        Me.clearButton.Size = New System.Drawing.Size(40, 40)
+        Me.clearButton.Text = "ToolStripButton2"
+        '
+        'ToolStripSeparator12
+        '
+        Me.ToolStripSeparator12.Name = "ToolStripSeparator12"
+        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 35)
+        '
+        'imageinsert
+        '
+        Me.imageinsert.AutoSize = False
+        Me.imageinsert.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.imageinsert.Image = CType(resources.GetObject("imageinsert.Image"), System.Drawing.Image)
+        Me.imageinsert.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.imageinsert.Name = "imageinsert"
+        Me.imageinsert.Size = New System.Drawing.Size(40, 40)
+        Me.imageinsert.Text = "ToolStripButton1"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.radiusBar)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.xSpeedTrack)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.sideUpDown)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Location = New System.Drawing.Point(26, 159)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(268, 173)
+        Me.Panel1.TabIndex = 132
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.TrackBar2)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.TrackBar1)
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.WidthTrack)
+        Me.Panel2.Location = New System.Drawing.Point(26, 89)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(268, 173)
+        Me.Panel2.TabIndex = 133
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(861, 600)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.BindingNavigator1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.fill2Button)
         Me.Controls.Add(Me.refreshBox)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.xSpeedTrack)
-        Me.Controls.Add(Me.sideUpDown)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.radiusBar)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.drawBox)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.pieButton)
-        Me.Controls.Add(Me.arcButton)
-        Me.Controls.Add(Me.liButton)
-        Me.Controls.Add(Me.rectButton)
-        Me.Controls.Add(Me.cirButton)
-        Me.Controls.Add(Me.grayButton)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TrackBar2)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TrackBar1)
-        Me.Controls.Add(Me.clearButton)
-        Me.Controls.Add(Me.saveButton)
-        Me.Controls.Add(Me.whiteButton)
-        Me.Controls.Add(Me.purpleButton)
-        Me.Controls.Add(Me.yellowButton)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.organgeButton)
-        Me.Controls.Add(Me.WidthTrack)
-        Me.Controls.Add(Me.fill1Button)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Drawing App"
@@ -648,35 +583,24 @@ Partial Class Form1
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator1.ResumeLayout(False)
         Me.BindingNavigator1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents organgeButton As Button
     Friend WithEvents WidthTrack As TrackBar
-    Friend WithEvents fill1Button As Button
     Friend WithEvents ColorDialog1 As ColorDialog
-    Friend WithEvents yellowButton As Button
-    Friend WithEvents whiteButton As Button
-    Friend WithEvents purpleButton As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents saveButton As Button
-    Friend WithEvents clearButton As Button
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents Label2 As Label
     Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents Label3 As Label
-    Friend WithEvents grayButton As Button
-    Friend WithEvents cirButton As Button
-    Friend WithEvents rectButton As Button
-    Friend WithEvents arcButton As Button
-    Friend WithEvents liButton As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents pieButton As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents drawBox As PictureBox
     Friend WithEvents Button1 As Button
@@ -687,9 +611,6 @@ Partial Class Form1
     Friend WithEvents xSpeedTrack As TrackBar
     Friend WithEvents Label5 As Label
     Friend WithEvents refreshBox As CheckBox
-    Friend WithEvents fill2Button As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents BindingNavigator1 As BindingNavigator
     Friend WithEvents lineButton As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
@@ -713,4 +634,19 @@ Partial Class Form1
     Friend WithEvents ToolStripSeparator7 As ToolStripSeparator
     Friend WithEvents blackButton As ToolStripButton
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
+    Friend WithEvents fill1Button As ToolStripButton
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents fill2Button As ToolStripButton
+    Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
+    Friend WithEvents saveButton As ToolStripButton
+    Friend WithEvents ToolStripSeparator11 As ToolStripSeparator
+    Friend WithEvents clearButton As ToolStripButton
+    Friend WithEvents ToolStripSeparator12 As ToolStripSeparator
+    Friend WithEvents imageinsert As ToolStripButton
+    Friend WithEvents circleBrush As ToolStripButton
+    Friend WithEvents ToolStripSeparator13 As ToolStripSeparator
+    Friend WithEvents squareBrush As ToolStripButton
+    Friend WithEvents ToolStripSeparator14 As ToolStripSeparator
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
 End Class

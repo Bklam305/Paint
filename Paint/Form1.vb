@@ -104,42 +104,27 @@
             Refresh()
         End If
     End Sub
-    Private Sub fill2Button_Click(sender As Object, e As EventArgs) Handles fill2Button.Click
+    Private Sub redButton_Click(sender As Object, e As EventArgs) Handles redButton.Click
+        c = sender.backcolor
+    End Sub
+    Private Sub blueButton_Click(sender As Object, e As EventArgs) Handles blueButton.Click
+        c = sender.backcolor
+    End Sub
+    Private Sub greenButton_Click(sender As Object, e As EventArgs) Handles greenButton.Click
+        c = sender.backcolor
+    End Sub
+    Private Sub blackButton_Click(sender As Object, e As EventArgs) Handles blackButton.Click
+        c = sender.backcolor
+    End Sub
+    Private Sub fill1Button_Click(sender As Object, e As EventArgs) Handles fill1Button.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
         sender.backcolor = c
     End Sub
-    Private Sub CustomColorButton_Click(sender As Object, e As EventArgs) Handles fill1Button.Click
+    Private Sub fill2Button_Click_1(sender As Object, e As EventArgs) Handles fill2Button.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
         sender.backcolor = c
-    End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) 
-        c = sender.backcolor
-    End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles organgeButton.Click
-        c = sender.backcolor
-    End Sub
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles yellowButton.Click
-        c = sender.backcolor
-    End Sub
-    Private Sub Button4_Click(sender As Object, e As EventArgs) 
-        c = sender.backcolor
-    End Sub
-    Private Sub Button9_Click(sender As Object, e As EventArgs) 
-        c = sender.backcolor
-    End Sub
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles purpleButton.Click
-        c = sender.backcolor
-    End Sub
-    Private Sub Button7_Click(sender As Object, e As EventArgs) 
-        c = sender.backcolor
-    End Sub
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles whiteButton.Click
-        c = sender.backcolor
-    End Sub
-    Private Sub grayButton_Click(sender As Object, e As EventArgs) Handles grayButton.Click
-        c = sender.backcolor
     End Sub
     Private Sub WidthTrack_Scroll(sender As Object, e As EventArgs) Handles WidthTrack.Scroll
         t = WidthTrack.Value
@@ -156,50 +141,49 @@
     Private Sub sideUpDown_ValueChanged(sender As Object, e As EventArgs) Handles sideUpDown.ValueChanged
         Integer.TryParse(sideUpDown.Value, s)
     End Sub
-    Private Sub liButton_Click(sender As Object, e As EventArgs) Handles liButton.Click
+    Private Sub lineButton_Click(sender As Object, e As EventArgs) Handles lineButton.Click
         type = "Line"
     End Sub
-    Private Sub rectButton_Click(sender As Object, e As EventArgs) Handles rectButton.Click
-        type = "Rectangle"
-    End Sub
-    Private Sub cirButton_Click(sender As Object, e As EventArgs) Handles cirButton.Click
+    Private Sub circleButton_Click(sender As Object, e As EventArgs) Handles circleButton.Click
         type = "Circle"
     End Sub
-    Private Sub arcButton_Click(sender As Object, e As EventArgs) Handles arcButton.Click
+    Private Sub arcsButton_Click(sender As Object, e As EventArgs) Handles arcsButton.Click
         type = "Arc"
     End Sub
-
-    Private Sub pieButton_Click(sender As Object, e As EventArgs) Handles pieButton.Click
+    Private Sub nGonButton_Click(sender As Object, e As EventArgs) Handles nGonButton.Click
+        type = "n-Gon"
+    End Sub
+    Private Sub piesButton_Click(sender As Object, e As EventArgs) Handles piesButton.Click
         type = "Pie"
     End Sub
-    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
-        type = "Poly"
+    Private Sub rectsButton_Click(sender As Object, e As EventArgs) Handles rectsButton.Click
+        type = "Rectangle"
     End Sub
-    Private Sub Button8_Click_1(sender As Object, e As EventArgs) Handles Button8.Click
-        type = "n-Gon"
+    Private Sub triButton_Click(sender As Object, e As EventArgs) Handles triButton.Click
+        type = "Poly"
     End Sub
     Private Sub drawBox_Click(sender As Object, e As EventArgs) Handles drawBox.Click
         type = "Picture"
     End Sub
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs)
         type = "Rectangle Brush"
     End Sub
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs)
         type = "Circle Brush"
     End Sub
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub imageinsert_Click(sender As Object, e As EventArgs) Handles imageinsert.Click
         OpenFileDialog1.ShowDialog()
     End Sub
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         drawBox.Load(OpenFileDialog1.FileName)
     End Sub
-    Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
+    Private Sub saveButton_Click_1(sender As Object, e As EventArgs) Handles saveButton.Click
         SaveFileDialog1.ShowDialog()
     End Sub
     Private Sub SaveFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveFileDialog1.FileOk
         PictureBox1.Image.Save(SaveFileDialog1.FileName)
     End Sub
-    Private Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
+    Private Sub clearButton_Click_1(sender As Object, e As EventArgs) Handles clearButton.Click
         Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
         Using g As Graphics = Graphics.FromImage(bmp)
             g.Clear(Color.White)
