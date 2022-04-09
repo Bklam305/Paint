@@ -33,16 +33,13 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.drawBox = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.radiusLabel = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.radiusBar = New System.Windows.Forms.TrackBar()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.sideUpDown = New System.Windows.Forms.NumericUpDown()
         Me.xSpeedTrack = New System.Windows.Forms.TrackBar()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.refreshBox = New System.Windows.Forms.CheckBox()
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.lineButton = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -79,13 +76,14 @@ Partial Class Form1
         Me.clearButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator12 = New System.Windows.Forms.ToolStripSeparator()
         Me.imageinsert = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.drawBox = New System.Windows.Forms.PictureBox()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.drawBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.radiusBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sideUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.xSpeedTrack, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,12 +91,13 @@ Partial Class Form1
         Me.BindingNavigator1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.drawBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(45, 10)
+        Me.Label1.Location = New System.Drawing.Point(41, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 11
@@ -107,7 +106,7 @@ Partial Class Form1
         'WidthTrack
         '
         Me.WidthTrack.LargeChange = 1
-        Me.WidthTrack.Location = New System.Drawing.Point(16, 26)
+        Me.WidthTrack.Location = New System.Drawing.Point(12, 29)
         Me.WidthTrack.Name = "WidthTrack"
         Me.WidthTrack.Size = New System.Drawing.Size(104, 45)
         Me.WidthTrack.TabIndex = 10
@@ -115,7 +114,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 78)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 93)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(843, 524)
         Me.PictureBox1.TabIndex = 6
@@ -126,7 +125,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(16, 92)
+        Me.TrackBar1.Location = New System.Drawing.Point(12, 95)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
@@ -136,7 +135,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(55, 76)
+        Me.Label2.Location = New System.Drawing.Point(41, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(38, 13)
         Me.Label2.TabIndex = 21
@@ -144,7 +143,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(144, 26)
+        Me.TrackBar2.Location = New System.Drawing.Point(140, 95)
         Me.TrackBar2.Maximum = 100
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
@@ -154,39 +153,20 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(180, 10)
+        Me.Label3.Location = New System.Drawing.Point(176, 79)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 102
         Me.Label3.Text = "Width"
         '
-        'Label4
+        'radiusLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(193, 11)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
-        Me.Label4.TabIndex = 111
-        Me.Label4.Text = "Radius"
-        '
-        'drawBox
-        '
-        Me.drawBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.drawBox.Location = New System.Drawing.Point(667, 342)
-        Me.drawBox.Name = "drawBox"
-        Me.drawBox.Size = New System.Drawing.Size(97, 51)
-        Me.drawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.drawBox.TabIndex = 118
-        Me.drawBox.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(770, 343)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(50, 50)
-        Me.Button1.TabIndex = 119
-        Me.Button1.Text = "Insert" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Image"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.radiusLabel.AutoSize = True
+        Me.radiusLabel.Location = New System.Drawing.Point(41, 102)
+        Me.radiusLabel.Name = "radiusLabel"
+        Me.radiusLabel.Size = New System.Drawing.Size(40, 13)
+        Me.radiusLabel.TabIndex = 111
+        Me.radiusLabel.Text = "Radius"
         '
         'OpenFileDialog1
         '
@@ -194,7 +174,7 @@ Partial Class Form1
         '
         'radiusBar
         '
-        Me.radiusBar.Location = New System.Drawing.Point(161, 27)
+        Me.radiusBar.Location = New System.Drawing.Point(12, 119)
         Me.radiusBar.Maximum = 100
         Me.radiusBar.Name = "radiusBar"
         Me.radiusBar.Size = New System.Drawing.Size(104, 45)
@@ -203,7 +183,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(190, 83)
+        Me.Label6.Location = New System.Drawing.Point(188, 102)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(33, 13)
         Me.Label6.TabIndex = 122
@@ -211,14 +191,14 @@ Partial Class Form1
         '
         'sideUpDown
         '
-        Me.sideUpDown.Location = New System.Drawing.Point(175, 106)
+        Me.sideUpDown.Location = New System.Drawing.Point(175, 128)
         Me.sideUpDown.Name = "sideUpDown"
         Me.sideUpDown.Size = New System.Drawing.Size(69, 20)
         Me.sideUpDown.TabIndex = 123
         '
         'xSpeedTrack
         '
-        Me.xSpeedTrack.Location = New System.Drawing.Point(3, 106)
+        Me.xSpeedTrack.Location = New System.Drawing.Point(140, 29)
         Me.xSpeedTrack.Minimum = -10
         Me.xSpeedTrack.Name = "xSpeedTrack"
         Me.xSpeedTrack.Size = New System.Drawing.Size(104, 45)
@@ -227,21 +207,11 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(42, 90)
+        Me.Label5.Location = New System.Drawing.Point(172, 13)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(38, 13)
         Me.Label5.TabIndex = 125
         Me.Label5.Text = "Speed"
-        '
-        'refreshBox
-        '
-        Me.refreshBox.AutoSize = True
-        Me.refreshBox.Location = New System.Drawing.Point(748, 52)
-        Me.refreshBox.Name = "refreshBox"
-        Me.refreshBox.Size = New System.Drawing.Size(88, 17)
-        Me.refreshBox.TabIndex = 126
-        Me.refreshBox.Text = "Auto Refresh"
-        Me.refreshBox.UseVisualStyleBackColor = True
         '
         'BindingNavigator1
         '
@@ -249,7 +219,7 @@ Partial Class Form1
         Me.BindingNavigator1.AutoSize = False
         Me.BindingNavigator1.CountItem = Nothing
         Me.BindingNavigator1.DeleteItem = Nothing
-        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lineButton, Me.BindingNavigatorSeparator, Me.circleButton, Me.BindingNavigatorSeparator1, Me.arcsButton, Me.BindingNavigatorSeparator2, Me.nGonButton, Me.ToolStripSeparator3, Me.piesButton, Me.ToolStripSeparator1, Me.rectsButton, Me.ToolStripSeparator2, Me.triButton, Me.ToolStripSeparator4, Me.circleBrush, Me.ToolStripSeparator13, Me.squareBrush, Me.ToolStripSeparator14, Me.redButton, Me.ToolStripSeparator5, Me.blueButton, Me.ToolStripSeparator8, Me.greenButton, Me.ToolStripSeparator7, Me.blackButton, Me.ToolStripSeparator6, Me.fill1Button, Me.ToolStripSeparator9, Me.fill2Button, Me.ToolStripSeparator10, Me.saveButton, Me.ToolStripSeparator11, Me.clearButton, Me.ToolStripSeparator12, Me.imageinsert})
+        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lineButton, Me.BindingNavigatorSeparator, Me.circleButton, Me.BindingNavigatorSeparator1, Me.arcsButton, Me.BindingNavigatorSeparator2, Me.nGonButton, Me.ToolStripSeparator3, Me.piesButton, Me.ToolStripSeparator1, Me.rectsButton, Me.ToolStripSeparator2, Me.triButton, Me.ToolStripSeparator4, Me.circleBrush, Me.ToolStripSeparator13, Me.squareBrush, Me.ToolStripSeparator14, Me.redButton, Me.ToolStripSeparator5, Me.blueButton, Me.ToolStripSeparator8, Me.greenButton, Me.ToolStripSeparator7, Me.blackButton, Me.ToolStripSeparator6, Me.fill1Button, Me.ToolStripSeparator9, Me.fill2Button, Me.ToolStripSeparator10, Me.saveButton, Me.ToolStripSeparator11, Me.clearButton, Me.ToolStripSeparator12, Me.imageinsert, Me.ToolStripSeparator15})
         Me.BindingNavigator1.Location = New System.Drawing.Point(0, 0)
         Me.BindingNavigator1.MoveFirstItem = Nothing
         Me.BindingNavigator1.MoveLastItem = Nothing
@@ -465,6 +435,7 @@ Partial Class Form1
         'fill1Button
         '
         Me.fill1Button.AutoSize = False
+        Me.fill1Button.BackColor = System.Drawing.SystemColors.Control
         Me.fill1Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.fill1Button.Image = CType(resources.GetObject("fill1Button.Image"), System.Drawing.Image)
         Me.fill1Button.ImageTransparentColor = System.Drawing.Color.Magenta
@@ -532,43 +503,58 @@ Partial Class Form1
         Me.imageinsert.Size = New System.Drawing.Size(40, 40)
         Me.imageinsert.Text = "ToolStripButton1"
         '
+        'ToolStripSeparator15
+        '
+        Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
+        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 35)
+        '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.radiusBar)
-        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.xSpeedTrack)
+        Me.Panel1.Controls.Add(Me.TrackBar2)
+        Me.Panel1.Controls.Add(Me.WidthTrack)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.sideUpDown)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Location = New System.Drawing.Point(26, 159)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.TrackBar1)
+        Me.Panel1.Location = New System.Drawing.Point(12, 106)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(268, 173)
+        Me.Panel1.Size = New System.Drawing.Size(268, 156)
         Me.Panel1.TabIndex = 132
+        Me.Panel1.Visible = False
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.TrackBar2)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.TrackBar1)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.WidthTrack)
-        Me.Panel2.Location = New System.Drawing.Point(26, 89)
+        Me.Panel2.Controls.Add(Me.radiusBar)
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.radiusLabel)
+        Me.Panel2.Controls.Add(Me.sideUpDown)
+        Me.Panel2.Location = New System.Drawing.Point(12, 186)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(268, 173)
         Me.Panel2.TabIndex = 133
+        Me.Panel2.Visible = False
+        '
+        'drawBox
+        '
+        Me.drawBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.drawBox.Location = New System.Drawing.Point(749, 37)
+        Me.drawBox.Name = "drawBox"
+        Me.drawBox.Size = New System.Drawing.Size(100, 50)
+        Me.drawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.drawBox.TabIndex = 134
+        Me.drawBox.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(861, 600)
+        Me.ClientSize = New System.Drawing.Size(861, 620)
+        Me.Controls.Add(Me.drawBox)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.BindingNavigator1)
-        Me.Controls.Add(Me.refreshBox)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.drawBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Drawing App"
@@ -576,7 +562,6 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.drawBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.radiusBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.sideUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.xSpeedTrack, System.ComponentModel.ISupportInitialize).EndInit()
@@ -587,8 +572,8 @@ Partial Class Form1
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.drawBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -601,16 +586,13 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents drawBox As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents radiusLabel As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents radiusBar As TrackBar
     Friend WithEvents Label6 As Label
     Friend WithEvents sideUpDown As NumericUpDown
     Friend WithEvents xSpeedTrack As TrackBar
     Friend WithEvents Label5 As Label
-    Friend WithEvents refreshBox As CheckBox
     Friend WithEvents BindingNavigator1 As BindingNavigator
     Friend WithEvents lineButton As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
@@ -634,10 +616,6 @@ Partial Class Form1
     Friend WithEvents ToolStripSeparator7 As ToolStripSeparator
     Friend WithEvents blackButton As ToolStripButton
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
-    Friend WithEvents fill1Button As ToolStripButton
-    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
-    Friend WithEvents fill2Button As ToolStripButton
-    Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
     Friend WithEvents saveButton As ToolStripButton
     Friend WithEvents ToolStripSeparator11 As ToolStripSeparator
     Friend WithEvents clearButton As ToolStripButton
@@ -649,4 +627,10 @@ Partial Class Form1
     Friend WithEvents ToolStripSeparator14 As ToolStripSeparator
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents ToolStripSeparator15 As ToolStripSeparator
+    Friend WithEvents drawBox As PictureBox
+    Friend WithEvents fill1Button As ToolStripButton
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents fill2Button As ToolStripButton
+    Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
 End Class

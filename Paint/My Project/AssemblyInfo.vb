@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Paint")>
+<Assembly: AssemblyTitle("Paint 2022")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Paint")>
-<Assembly: AssemblyCopyright("Copyright ©  2022")>
+<Assembly: AssemblyCompany("ElectoPaint")>
+<Assembly: AssemblyProduct("Paint Program")>
+<Assembly: AssemblyCopyright("Copyright ©  ElectroPaint 2019")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

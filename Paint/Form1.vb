@@ -80,14 +80,14 @@
                 d.color2 = fill2Button.BackColor
             End If
             m_shapes.Add(d)
-                PictureBox1.Invalidate()
-                m_Previous = e.Location
-            End If
+            PictureBox1.Invalidate()
+            m_Previous = e.Location
+        End If
     End Sub
     Private Sub pictureBox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
         m_Previous = Nothing
     End Sub
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If PictureBox1.Image Is Nothing Then
             Dim bmp As New Bitmap(PictureBox1.Width, PictureBox1.Height)
             Using g As Graphics = Graphics.FromImage(bmp)
@@ -100,31 +100,82 @@
         For Each s As Object In m_shapes
             s.Draw()
         Next
-        If (refreshBox.Checked) Then
-            Refresh()
-        End If
     End Sub
     Private Sub redButton_Click(sender As Object, e As EventArgs) Handles redButton.Click
         c = sender.backcolor
+        If WidthTrack.Value <= 0 & TrackBar1.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If xSpeedTrack.Value <= 0 & WidthTrack.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If radiusBar.Value <= 0 & sideUpDown.Value <= 0 Then
+            Panel2.Visible = False
+        End If
     End Sub
     Private Sub blueButton_Click(sender As Object, e As EventArgs) Handles blueButton.Click
         c = sender.backcolor
+        If WidthTrack.Value <= 0 & TrackBar1.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If xSpeedTrack.Value <= 0 & WidthTrack.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If radiusBar.Value <= 0 & sideUpDown.Value <= 0 Then
+            Panel2.Visible = False
+        End If
     End Sub
     Private Sub greenButton_Click(sender As Object, e As EventArgs) Handles greenButton.Click
         c = sender.backcolor
+        If WidthTrack.Value <= 0 & TrackBar1.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If xSpeedTrack.Value <= 0 & WidthTrack.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If radiusBar.Value <= 0 & sideUpDown.Value <= 0 Then
+            Panel2.Visible = False
+        End If
     End Sub
     Private Sub blackButton_Click(sender As Object, e As EventArgs) Handles blackButton.Click
         c = sender.backcolor
+        If WidthTrack.Value <= 0 & TrackBar1.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If xSpeedTrack.Value <= 0 & WidthTrack.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If radiusBar.Value <= 0 & sideUpDown.Value <= 0 Then
+            Panel2.Visible = False
+        End If
     End Sub
     Private Sub fill1Button_Click(sender As Object, e As EventArgs) Handles fill1Button.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
-        sender.backcolor = c
+        c = sender.backcolor
+        If WidthTrack.Value <= 0 & TrackBar1.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If xSpeedTrack.Value <= 0 & WidthTrack.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If radiusBar.Value <= 0 & sideUpDown.Value <= 0 Then
+            Panel2.Visible = False
+        End If
     End Sub
-    Private Sub fill2Button_Click_1(sender As Object, e As EventArgs) Handles fill2Button.Click
+    Private Sub fill2Button_Click(sender As Object, e As EventArgs) Handles fill2Button.Click
         ColorDialog1.ShowDialog()
         c = ColorDialog1.Color
-        sender.backcolor = c
+        c = sender.backcolor
+        If WidthTrack.Value <= 0 & TrackBar1.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If xSpeedTrack.Value <= 0 & WidthTrack.Value <= 0 Then
+            Panel1.Visible = False
+        End If
+        If radiusBar.Value <= 0 & sideUpDown.Value <= 0 Then
+            Panel2.Visible = False
+        End If
     End Sub
     Private Sub WidthTrack_Scroll(sender As Object, e As EventArgs) Handles WidthTrack.Scroll
         t = WidthTrack.Value
@@ -143,33 +194,149 @@
     End Sub
     Private Sub lineButton_Click(sender As Object, e As EventArgs) Handles lineButton.Click
         type = "Line"
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        TrackBar1.Visible = False
+        TrackBar2.Visible = False
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Panel2.Visible = False
     End Sub
     Private Sub circleButton_Click(sender As Object, e As EventArgs) Handles circleButton.Click
         type = "Circle"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
     Private Sub arcsButton_Click(sender As Object, e As EventArgs) Handles arcsButton.Click
         type = "Arc"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
     Private Sub nGonButton_Click(sender As Object, e As EventArgs) Handles nGonButton.Click
         type = "n-Gon"
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        Panel2.Visible = True
+        radiusBar.Visible = True
+        radiusLabel.Visible = True
+        sideUpDown.Visible = True
+        Label6.Visible = True
     End Sub
     Private Sub piesButton_Click(sender As Object, e As EventArgs) Handles piesButton.Click
         type = "Pie"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
     Private Sub rectsButton_Click(sender As Object, e As EventArgs) Handles rectsButton.Click
         type = "Rectangle"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
     Private Sub triButton_Click(sender As Object, e As EventArgs) Handles triButton.Click
         type = "Poly"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
     Private Sub drawBox_Click(sender As Object, e As EventArgs) Handles drawBox.Click
         type = "Picture"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs)
-        type = "Rectangle Brush"
-    End Sub
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs)
+    Private Sub circleBrush_Click(sender As Object, e As EventArgs) Handles circleBrush.Click
         type = "Circle Brush"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
+    End Sub
+    Private Sub squareBrush_Click(sender As Object, e As EventArgs) Handles squareBrush.Click
+        type = "Rectangle Brush"
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        TrackBar2.Value = 0
+        TrackBar1.Value = 0
+        Panel1.Visible = True
+        radiusBar.Visible = False
+        radiusLabel.Visible = False
+        sideUpDown.Visible = False
+        Label6.Visible = False
+        Label2.Visible = True
+        Label3.Visible = True
+        Panel2.Visible = False
     End Sub
     Private Sub imageinsert_Click(sender As Object, e As EventArgs) Handles imageinsert.Click
         OpenFileDialog1.ShowDialog()
@@ -189,5 +356,7 @@
             g.Clear(Color.White)
         End Using
         PictureBox1.Image = bmp
+        fill2Button.BackColor = Color.White
+        fill1Button.BackColor = Color.White
     End Sub
 End Class
