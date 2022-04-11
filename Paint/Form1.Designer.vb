@@ -241,7 +241,7 @@ Partial Class Form1
         Me.lineButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.lineButton.Name = "lineButton"
         Me.lineButton.Size = New System.Drawing.Size(30, 30)
-        Me.lineButton.Text = "ToolStripButton1"
+        Me.lineButton.Text = "Line"
         '
         'BindingNavigatorSeparator
         '
@@ -256,7 +256,7 @@ Partial Class Form1
         Me.circleButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.circleButton.Name = "circleButton"
         Me.circleButton.Size = New System.Drawing.Size(40, 40)
-        Me.circleButton.Text = "ToolStripButton1"
+        Me.circleButton.Text = "Circle"
         '
         'BindingNavigatorSeparator1
         '
@@ -271,7 +271,7 @@ Partial Class Form1
         Me.arcsButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.arcsButton.Name = "arcsButton"
         Me.arcsButton.Size = New System.Drawing.Size(40, 40)
-        Me.arcsButton.Text = "ToolStripButton1"
+        Me.arcsButton.Text = "Arc"
         '
         'BindingNavigatorSeparator2
         '
@@ -286,7 +286,7 @@ Partial Class Form1
         Me.nGonButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.nGonButton.Name = "nGonButton"
         Me.nGonButton.Size = New System.Drawing.Size(40, 40)
-        Me.nGonButton.Text = "ToolStripButton1"
+        Me.nGonButton.Text = "N-Gon"
         '
         'ToolStripSeparator3
         '
@@ -301,7 +301,7 @@ Partial Class Form1
         Me.piesButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.piesButton.Name = "piesButton"
         Me.piesButton.Size = New System.Drawing.Size(40, 40)
-        Me.piesButton.Text = "ToolStripButton1"
+        Me.piesButton.Text = "Pie"
         '
         'ToolStripSeparator1
         '
@@ -316,7 +316,7 @@ Partial Class Form1
         Me.rectsButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.rectsButton.Name = "rectsButton"
         Me.rectsButton.Size = New System.Drawing.Size(40, 40)
-        Me.rectsButton.Text = "ToolStripButton1"
+        Me.rectsButton.Text = "Square"
         '
         'ToolStripSeparator2
         '
@@ -331,7 +331,7 @@ Partial Class Form1
         Me.triButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.triButton.Name = "triButton"
         Me.triButton.Size = New System.Drawing.Size(40, 40)
-        Me.triButton.Text = "ToolStripButton1"
+        Me.triButton.Text = "Triangles"
         '
         'ToolStripSeparator4
         '
@@ -346,7 +346,7 @@ Partial Class Form1
         Me.circleBrush.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.circleBrush.Name = "circleBrush"
         Me.circleBrush.Size = New System.Drawing.Size(40, 40)
-        Me.circleBrush.Text = "ToolStripButton1"
+        Me.circleBrush.Text = "Cirle Brush"
         '
         'ToolStripSeparator13
         '
@@ -361,7 +361,7 @@ Partial Class Form1
         Me.squareBrush.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.squareBrush.Name = "squareBrush"
         Me.squareBrush.Size = New System.Drawing.Size(40, 40)
-        Me.squareBrush.Text = "ToolStripButton2"
+        Me.squareBrush.Text = "Square Brush"
         '
         'ToolStripSeparator14
         '
@@ -377,7 +377,7 @@ Partial Class Form1
         Me.redButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.redButton.Name = "redButton"
         Me.redButton.Size = New System.Drawing.Size(25, 25)
-        Me.redButton.Text = "ToolStripButton1"
+        Me.redButton.Text = "Color Red"
         '
         'ToolStripSeparator5
         '
@@ -393,7 +393,7 @@ Partial Class Form1
         Me.blueButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.blueButton.Name = "blueButton"
         Me.blueButton.Size = New System.Drawing.Size(25, 25)
-        Me.blueButton.Text = "ToolStripButton1"
+        Me.blueButton.Text = "Color Blue"
         '
         'ToolStripSeparator8
         '
@@ -409,7 +409,7 @@ Partial Class Form1
         Me.greenButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.greenButton.Name = "greenButton"
         Me.greenButton.Size = New System.Drawing.Size(25, 25)
-        Me.greenButton.Text = "ToolStripButton1"
+        Me.greenButton.Text = "Color Green"
         '
         'ToolStripSeparator7
         '
@@ -425,7 +425,7 @@ Partial Class Form1
         Me.blackButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.blackButton.Name = "blackButton"
         Me.blackButton.Size = New System.Drawing.Size(25, 25)
-        Me.blackButton.Text = "ToolStripButton1"
+        Me.blackButton.Text = "Color Black"
         '
         'ToolStripSeparator6
         '
@@ -441,7 +441,7 @@ Partial Class Form1
         Me.fill1Button.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.fill1Button.Name = "fill1Button"
         Me.fill1Button.Size = New System.Drawing.Size(40, 40)
-        Me.fill1Button.Text = "ToolStripButton1"
+        Me.fill1Button.Text = "Fill Color"
         '
         'ToolStripSeparator9
         '
@@ -456,7 +456,7 @@ Partial Class Form1
         Me.fill2Button.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.fill2Button.Name = "fill2Button"
         Me.fill2Button.Size = New System.Drawing.Size(40, 40)
-        Me.fill2Button.Text = "ToolStripButton2"
+        Me.fill2Button.Text = "Fill Color"
         '
         'ToolStripSeparator10
         '
@@ -471,7 +471,7 @@ Partial Class Form1
         Me.saveButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.saveButton.Name = "saveButton"
         Me.saveButton.Size = New System.Drawing.Size(40, 40)
-        Me.saveButton.Text = "ToolStripButton1"
+        Me.saveButton.Text = "Save"
         '
         'ToolStripSeparator11
         '
@@ -486,7 +486,7 @@ Partial Class Form1
         Me.clearButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.clearButton.Name = "clearButton"
         Me.clearButton.Size = New System.Drawing.Size(40, 40)
-        Me.clearButton.Text = "ToolStripButton2"
+        Me.clearButton.Text = "Clear"
         '
         'ToolStripSeparator12
         '
@@ -501,7 +501,7 @@ Partial Class Form1
         Me.imageinsert.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.imageinsert.Name = "imageinsert"
         Me.imageinsert.Size = New System.Drawing.Size(40, 40)
-        Me.imageinsert.Text = "ToolStripButton1"
+        Me.imageinsert.Text = "Insert"
         '
         'ToolStripSeparator15
         '
