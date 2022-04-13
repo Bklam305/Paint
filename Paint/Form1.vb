@@ -79,6 +79,13 @@
                 d.color1 = fill1Button.BackColor
                 d.color2 = fill2Button.BackColor
             End If
+            If type = "Fish" Then
+                d = New Combined(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, t)
+                d.h = h
+                d.w = w
+                d.color1 = c
+            End If
             m_shapes.Add(d)
             PictureBox1.Invalidate()
             m_Previous = e.Location
@@ -165,6 +172,10 @@
         radiusLabel.Visible = True
         sideUpDown.Visible = True
         Label6.Visible = True
+        TrackBar1.Visible = True
+        TrackBar2.Visible = True
+        Label2.Visible = True
+        Label3.Visible = True
     End Sub
     Private Sub circleButton_Click(sender As Object, e As EventArgs) Handles circleButton.Click
         type = "Circle"
@@ -180,6 +191,10 @@
     End Sub
     Private Sub rectsButton_Click(sender As Object, e As EventArgs) Handles rectsButton.Click
         type = "Rectangle"
+        MainPanel()
+    End Sub
+    Private Sub fishButton_Click(sender As Object, e As EventArgs) Handles fishButton.Click
+        type = "Fish"
         MainPanel()
     End Sub
     Private Sub triButton_Click(sender As Object, e As EventArgs) Handles triButton.Click

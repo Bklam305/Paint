@@ -73,9 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Arc.vb" />
     <Compile Include="Circle.vb" />
     <Compile Include="CircleBrush.vb" />
+    <Compile Include="Combined.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -80,6 +80,8 @@ Partial Class Form1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.drawBox = New System.Windows.Forms.PictureBox()
+        Me.fishButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator16 = New System.Windows.Forms.ToolStripSeparator()
         CType(Me.WidthTrack, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -219,7 +221,7 @@ Partial Class Form1
         Me.BindingNavigator1.AutoSize = False
         Me.BindingNavigator1.CountItem = Nothing
         Me.BindingNavigator1.DeleteItem = Nothing
-        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lineButton, Me.BindingNavigatorSeparator, Me.circleButton, Me.BindingNavigatorSeparator1, Me.arcsButton, Me.BindingNavigatorSeparator2, Me.nGonButton, Me.ToolStripSeparator3, Me.piesButton, Me.ToolStripSeparator1, Me.rectsButton, Me.ToolStripSeparator2, Me.triButton, Me.ToolStripSeparator4, Me.circleBrush, Me.ToolStripSeparator13, Me.squareBrush, Me.ToolStripSeparator14, Me.redButton, Me.ToolStripSeparator5, Me.blueButton, Me.ToolStripSeparator8, Me.greenButton, Me.ToolStripSeparator7, Me.blackButton, Me.ToolStripSeparator6, Me.fill1Button, Me.ToolStripSeparator9, Me.fill2Button, Me.ToolStripSeparator10, Me.saveButton, Me.ToolStripSeparator11, Me.clearButton, Me.ToolStripSeparator12, Me.imageinsert, Me.ToolStripSeparator15})
+        Me.BindingNavigator1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lineButton, Me.BindingNavigatorSeparator, Me.circleButton, Me.BindingNavigatorSeparator1, Me.arcsButton, Me.BindingNavigatorSeparator2, Me.nGonButton, Me.ToolStripSeparator3, Me.piesButton, Me.ToolStripSeparator1, Me.rectsButton, Me.ToolStripSeparator2, Me.triButton, Me.ToolStripSeparator4, Me.circleBrush, Me.ToolStripSeparator13, Me.squareBrush, Me.ToolStripSeparator14, Me.fishButton, Me.ToolStripSeparator16, Me.redButton, Me.ToolStripSeparator5, Me.blueButton, Me.ToolStripSeparator8, Me.greenButton, Me.ToolStripSeparator7, Me.blackButton, Me.ToolStripSeparator6, Me.fill1Button, Me.ToolStripSeparator9, Me.fill2Button, Me.ToolStripSeparator10, Me.saveButton, Me.ToolStripSeparator11, Me.clearButton, Me.ToolStripSeparator12, Me.imageinsert, Me.ToolStripSeparator15})
         Me.BindingNavigator1.Location = New System.Drawing.Point(0, 0)
         Me.BindingNavigator1.MoveFirstItem = Nothing
         Me.BindingNavigator1.MoveLastItem = Nothing
@@ -546,6 +548,21 @@ Partial Class Form1
         Me.drawBox.TabIndex = 134
         Me.drawBox.TabStop = False
         '
+        'fishButton
+        '
+        Me.fishButton.AutoSize = False
+        Me.fishButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.fishButton.Image = CType(resources.GetObject("fishButton.Image"), System.Drawing.Image)
+        Me.fishButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.fishButton.Name = "fishButton"
+        Me.fishButton.Size = New System.Drawing.Size(40, 40)
+        Me.fishButton.Text = "Fish Shape"
+        '
+        'ToolStripSeparator16
+        '
+        Me.ToolStripSeparator16.Name = "ToolStripSeparator16"
+        Me.ToolStripSeparator16.Size = New System.Drawing.Size(6, 35)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -633,4 +650,6 @@ Partial Class Form1
     Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
     Friend WithEvents fill2Button As ToolStripButton
     Friend WithEvents ToolStripSeparator10 As ToolStripSeparator
+    Friend WithEvents fishButton As ToolStripButton
+    Friend WithEvents ToolStripSeparator16 As ToolStripSeparator
 End Class
